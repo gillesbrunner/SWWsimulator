@@ -1,0 +1,9 @@
+
+enum Panel {
+	
+	NONE,
+	INITIALISATION,
+	SIMULATION,
+	VISUALISATION
+	
+};
