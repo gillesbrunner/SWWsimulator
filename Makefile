@@ -6,10 +6,10 @@
 CXX = `$(WX_CONFIG) --cxx`
 
 # Standard flags for C++ 
-CXXFLAGS ?= 
+CXXFLAGS ?= -std=c++11
 
 # Standard preprocessor flags (common for CC and CXX) 
-CPPFLAGS ?= 
+CPPFLAGS ?=
 
 # Standard linker flags 
 LDFLAGS ?= 
@@ -39,7 +39,7 @@ WX_CONFIG_FLAGS = $(WX_CONFIG_UNICODE_FLAG) $(WX_CONFIG_SHARED_FLAG) \
 	--toolkit=$(WX_PORT) --version=$(WX_VERSION_MAJOR).$(WX_VERSION_MINOR)
 SIMULATOR_CXXFLAGS = -I. `$(WX_CONFIG) --cxxflags $(WX_CONFIG_FLAGS)` $(CPPFLAGS) \
 	$(CXXFLAGS)
-SIMULATOR_OBJECTS =  $(addprefix $(BIN)/, main_window.o MyWindow.o simulator.o) 
+SIMULATOR_OBJECTS =  $(addprefix $(BIN)/, main_window.o MyWindow.o simulator.o)
 
 ### Conditionally set variables: ###
 
@@ -83,7 +83,7 @@ simulator: $(SIMULATOR_OBJECTS)
 
 $(BIN)/%.o : $(SRC)/%.cpp
 	$(CXX) -c -o $@ $(SIMULATOR_CXXFLAGS) $(CPPDEPS) $<
-
+	
 .PHONY: all install uninstall clean
 
 

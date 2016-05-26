@@ -31,11 +31,17 @@
 
 
 #include "panel_ids.h"
+#include "rapidxml-1.13/rapidxml.hpp"
+#include "exprtk/exprtk.hpp"
 
 #define ROES 0x1
 #define WENO 0x2
 #define PARA 0x4
 #define PAPA 0x8
 
+#include <unordered_map>
+#include <string>
+#include <fstream>
+#include <iostream>
 
 #endif /* SRC_INCLUDED_H_ */
