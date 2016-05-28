@@ -95,22 +95,34 @@ void MyWindow::OnMethodSelect( wxCommandEvent& event )
 
 void MyWindow::OnGenerateInitialization( wxCommandEvent& event )
 {
-	using namespace rapidxml;
-	{
-		std::ofstream streamOut("init.sww");
+	std::ofstream streamOut("init.sww");
 
-		xml_document<> doc;
-		//doc.allocate_node(node_type::node_data, "initialisation");
+	 rapidxml::xml_document<> doc;
 
-		//xml_node* init_node = doc.first_node("initialisation");
+	 // xml declaration node
+	 rapidxml::xml_node<>* decl = doc.allocate_node(rapidxml::node_declaration); //allocate default xml declaration node
 
-		//xml_attribute<> *attr = doc.allocate_attribute("size", "100");
-		//init_node->append_attribbute(attr);
+	 //apppend special attributes to it
+	 decl->append_attribute(doc.allocate_attribute("version", "1.0"));
+	 decl->append_attribute(doc.allocate_attribute("encoding", "utf-8"));
+	 doc.append_node(decl); //finally, append node
 
-		char buffer[4096];                      // You are responsible for making the buffer large enough!
-		char *end = print(buffer, doc, 0);      // end contains pointer to character after last printed character
-		*end = 0;                               // Add string terminator after XML
-	}
+	 //allocate root node
+	 rapidxml::xml_node<>* root = doc.allocate_node(rapidxml::node_element,"root"); //node element is the type of node
+	 doc.append_node(root);
+
+
+	 //node1
+	 rapidxml::xml_node<>* node1 = doc.allocate_node(rapidxml::node_element,"node1");
+	 node1->value("Contents of node1");
+	 root->append_node(node1);
+
+	 //root2
+	 rapidxml::xml_node<>* root2 = doc.allocate_node(rapidxml::node_element,"root2");
+	 root2->value("Contetns of root2");
+	 doc.append_node(root2);
+
+	 streamOut << doc;
 }
 
 // ===================================================================

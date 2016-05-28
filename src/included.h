@@ -31,7 +31,10 @@
 
 
 #include "panel_ids.h"
-#include "rapidxml-1.13/rapidxml.hpp"
+#include "rapidxml-1.13/rapidxml_iterators.hpp"
+#include "rapidxml-1.13/rapidxml_utils.hpp"
+#include "rapidxml-1.13/rapidxml_print.hpp"
+
 #include "exprtk/exprtk.hpp"
 
 #define ROES 0x1
@@ -43,5 +46,6 @@
 #include <string>
 #include <fstream>
 #include <iostream>
+#include <unistd.h>
 
 #endif /* SRC_INCLUDED_H_ */
