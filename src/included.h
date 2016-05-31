@@ -29,23 +29,21 @@
 #include "wx/wfstream.h"
 #include <wx/app.h>
 
+#include <unordered_map>
+#include <string>
+#include <fstream>
+#include <iostream>
+#include <vector>
+#include <unistd.h>
+#include <sstream>
 
 #include "panel_ids.h"
-#include "rapidxml-1.13/rapidxml_iterators.hpp"
-#include "rapidxml-1.13/rapidxml_utils.hpp"
-#include "rapidxml-1.13/rapidxml_print.hpp"
-
+#include "XMLFile.h"
 #include "exprtk/exprtk.hpp"
 
 #define ROES 0x1
 #define WENO 0x2
 #define PARA 0x4
 #define PAPA 0x8
-
-#include <unordered_map>
-#include <string>
-#include <fstream>
-#include <iostream>
-#include <unistd.h>
 
 #endif /* SRC_INCLUDED_H_ */

@@ -95,34 +95,13 @@ void MyWindow::OnMethodSelect( wxCommandEvent& event )
 
 void MyWindow::OnGenerateInitialization( wxCommandEvent& event )
 {
-	std::ofstream streamOut("init.sww");
+	std::ofstream streamOut("init.xml");
 
-	 rapidxml::xml_document<> doc;
+	Node root("XML");
+	Node init("initialisation"); root.add(&init);
+	Node size("size", "100");	 init.add(&size);
 
-	 // xml declaration node
-	 rapidxml::xml_node<>* decl = doc.allocate_node(rapidxml::node_declaration); //allocate default xml declaration node
-
-	 //apppend special attributes to it
-	 decl->append_attribute(doc.allocate_attribute("version", "1.0"));
-	 decl->append_attribute(doc.allocate_attribute("encoding", "utf-8"));
-	 doc.append_node(decl); //finally, append node
-
-	 //allocate root node
-	 rapidxml::xml_node<>* root = doc.allocate_node(rapidxml::node_element,"root"); //node element is the type of node
-	 doc.append_node(root);
-
-
-	 //node1
-	 rapidxml::xml_node<>* node1 = doc.allocate_node(rapidxml::node_element,"node1");
-	 node1->value("Contents of node1");
-	 root->append_node(node1);
-
-	 //root2
-	 rapidxml::xml_node<>* root2 = doc.allocate_node(rapidxml::node_element,"root2");
-	 root2->value("Contetns of root2");
-	 doc.append_node(root2);
-
-	 streamOut << doc;
+	root.print(streamOut);
 }
 
 // ===================================================================
