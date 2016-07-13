@@ -43,6 +43,8 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	mainSizer->Add( sizerButtons, 1, wxEXPAND, 5 );
 	
 	pnlInit = new wxPanel( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
+	pnlInit->Hide();
+	
 	wxFlexGridSizer* mainSizerInit;
 	mainSizerInit = new wxFlexGridSizer( 4, 1, 10, 0 );
 	mainSizerInit->SetFlexibleDirection( wxBOTH );
@@ -237,6 +239,8 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	mainSizer->Add( pnlInit, 1, wxALIGN_TOP|wxALL|wxEXPAND, 5 );
 	
 	pnlSim = new wxPanel( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
+	pnlSim->Hide();
+	
 	wxFlexGridSizer* mainSizerSim;
 	mainSizerSim = new wxFlexGridSizer( 2, 1, 10, 200 );
 	mainSizerSim->SetFlexibleDirection( wxBOTH );
@@ -339,6 +343,21 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	pnlSim->Layout();
 	mainSizerSim->Fit( pnlSim );
 	mainSizer->Add( pnlSim, 1, wxALIGN_TOP|wxALL|wxEXPAND, 5 );
+	
+	pnlVisu = new wxPanel( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
+	wxFlexGridSizer* mainSizerVisu;
+	mainSizerVisu = new wxFlexGridSizer( 1, 2, 0, 0 );
+	mainSizerVisu->SetFlexibleDirection( wxBOTH );
+	mainSizerVisu->SetNonFlexibleGrowMode( wxFLEX_GROWMODE_SPECIFIED );
+	
+	staticsizerManagment = new wxStaticBoxSizer( new wxStaticBox( pnlVisu, wxID_ANY, wxT("Solution Visualisation") ), wxVERTICAL );
+	
+	mainSizerVisu->Add( staticsizerManagment, 1, wxEXPAND, 5 );
+	
+	pnlVisu->SetSizer( mainSizerVisu );
+	pnlVisu->Layout();
+	mainSizerVisu->Fit( pnlVisu );
+	mainSizer->Add( pnlVisu, 0, wxALIGN_TOP|wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	this->SetSizer( mainSizer );
 	this->Layout();

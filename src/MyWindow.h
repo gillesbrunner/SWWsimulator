@@ -19,7 +19,7 @@ typedef exprtk::parser<double>     	 parser_t;
 class MyWindow: public MainWindow {
 private :
 	Panel selectedPanel;
-	VisuPanel* pnlVisu;
+	VisuPanel* OSGview;
 
 	expression_t _expression;
 	double _exprX;

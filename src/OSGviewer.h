@@ -76,7 +76,7 @@ private:
 class VisuPanel : public wxPanel
 {
 public:
-	VisuPanel(wxFrame *frame, const wxWindowID& id,
+	VisuPanel(wxWindow *frame, const wxWindowID& id,
 			const wxPoint& pos, const wxSize& size,
 			long style = wxDEFAULT_FRAME_STYLE);
 

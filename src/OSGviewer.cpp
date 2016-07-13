@@ -12,11 +12,12 @@ BEGIN_EVENT_TABLE(VisuPanel, wxPanel)
 END_EVENT_TABLE()
 
 /* My frame constructor */
-VisuPanel::VisuPanel(wxFrame *frame, const wxWindowID& id, const wxPoint& pos,
+VisuPanel::VisuPanel(wxWindow *frame, const wxWindowID& id, const wxPoint& pos,
     const wxSize& size, long style)
     : wxPanel(frame, id, pos, size, style)
 {
-	Show(true);
+	Show();
+	CreateCanvas();
 }
 
 void VisuPanel::SetViewer(osgViewer::Viewer *viewer)
@@ -33,14 +34,6 @@ void VisuPanel::OnIdle(wxIdleEvent &event)
 
 void VisuPanel::CreateCanvas()
 {
-	mainSizerVisu = new wxFlexGridSizer( 4, 1, 10, 0 );
-	mainSizerVisu->SetFlexibleDirection( wxBOTH );
-	mainSizerVisu->SetNonFlexibleGrowMode( wxFLEX_GROWMODE_SPECIFIED );
-
-	SetSizer( mainSizerVisu );
-	Layout();
-	mainSizerVisu->Fit( this );
-
 	// create osg canvas
 	//    - initialize
 	int *attributes = new int[7];
@@ -80,8 +73,6 @@ void VisuPanel::CreateCanvas()
 	viewer->setSceneData(loadedModel.get());
 	viewer->setCameraManipulator(new osgGA::TrackballManipulator);
 	SetViewer(viewer);
-
-	mainSizerVisu->Add( canvas, 1, wxEXPAND, 5 );
 }
 
 

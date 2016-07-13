@@ -90,6 +90,8 @@ class MainWindow : public wxFrame
 		wxButton* btnStart;
 		wxStaticText* lblEstRemTiime;
 		wxStaticText* lblEstRemTime2;
+		wxPanel* pnlVisu;
+		wxStaticBoxSizer* staticsizerManagment;
 		
 		// Virtual event handlers, overide them in your derived class
 		virtual void OnExit( wxCommandEvent& event ) { event.Skip(); }

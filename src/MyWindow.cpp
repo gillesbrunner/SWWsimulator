@@ -11,9 +11,6 @@
 MyWindow::MyWindow()
 : MainWindow((wxFrame *)NULL)
 {
-	pnlVisu = new VisuPanel( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
-	mainSizer->Add( pnlVisu, 1, wxALIGN_TOP|wxALL|wxEXPAND, 5 );
-
 	selectedPanel = INITIALISATION;
 	pnlInit->Show();
 	pnlSim->Hide();
@@ -22,14 +19,15 @@ MyWindow::MyWindow()
 
 MyWindow::~MyWindow()
 {
-	delete pnlVisu;
+	delete OSGview
 }
 
 void MyWindow::OnExit(wxCommandEvent& event) { ::wxExit(); }
 
 void MyWindow::OnInitMotion( wxMouseEvent& event )
 {
-	if (selectedPanel != INITIALISATION) {
+	if (selectedPanel != INITIALISATION)
+	{
 		pnlInit->Show();
 		selectedPanel = INITIALISATION;
 
@@ -41,7 +39,8 @@ void MyWindow::OnInitMotion( wxMouseEvent& event )
 
 void MyWindow::OnSimMotion( wxMouseEvent& event )
 {
-	if (selectedPanel != SIMULATION) {
+	if (selectedPanel != SIMULATION)
+	{
 		pnlSim->Show();
 		selectedPanel = SIMULATION;
 
@@ -53,10 +52,14 @@ void MyWindow::OnSimMotion( wxMouseEvent& event )
 
 void MyWindow::OnVisuMotion( wxMouseEvent& event )
 {
-	pnlVisu->CreateCanvas();
-
-	if (selectedPanel != VISUALISATION) {
+	if (selectedPanel != VISUALISATION)
+	{
 		pnlVisu->Show();
+		if (!OSGview)
+		{
+			OSGview = new VisuPanel( pnlVisu, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
+			staticsizerManagment->Add(OSGview, 1, wxALIGN_TOP|wxALL|wxEXPAND, 5 );
+		}
 		selectedPanel = VISUALISATION;
 
 		pnlInit->Hide();
