@@ -17,10 +17,14 @@ public:
 
 	Node(std::string name = "", std::string value = "");
 
-	void print(std::ofstream& str);
-	void add(Node* child);
+	void write(std::ofstream& str);
+	static Node read(std::string const& file, size_t& pos);
 
-	void Setlevel(char lvl) { level = lvl; }
+	void add(Node* child);
+	bool isEmpty();
+
+private:
+	void SetLevel(char lvl);
 };
 
 
@@ -30,9 +34,12 @@ private:
 	std::ostream OutFile;
 	std::ifstream InFile;
 
+	std::string file;
+	std::stack<std::string> NodeStack;
 public:
 	XMLFile();
 
+	void read(std::string file);
 };
 
 #endif /* _SRC_XMLFILE_H */

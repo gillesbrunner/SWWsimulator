@@ -6,17 +6,24 @@
  */
 
 #include "MyWindow.h"
+#include "OSGviewer.h"
 
 MyWindow::MyWindow()
 : MainWindow((wxFrame *)NULL)
 {
+	pnlVisu = new VisuPanel( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
+	mainSizer->Add( pnlVisu, 1, wxALIGN_TOP|wxALL|wxEXPAND, 5 );
+
 	selectedPanel = INITIALISATION;
 	pnlInit->Show();
 	pnlSim->Hide();
 	pnlVisu->Hide();
 }
 
-MyWindow::~MyWindow() {}
+MyWindow::~MyWindow()
+{
+	delete pnlVisu;
+}
 
 void MyWindow::OnExit(wxCommandEvent& event) { ::wxExit(); }
 
@@ -46,6 +53,8 @@ void MyWindow::OnSimMotion( wxMouseEvent& event )
 
 void MyWindow::OnVisuMotion( wxMouseEvent& event )
 {
+	pnlVisu->CreateCanvas();
+
 	if (selectedPanel != VISUALISATION) {
 		pnlVisu->Show();
 		selectedPanel = VISUALISATION;
@@ -53,7 +62,6 @@ void MyWindow::OnVisuMotion( wxMouseEvent& event )
 		pnlInit->Hide();
 		pnlSim->Hide();
 		Layout();
-
 	}
 }
 
@@ -97,11 +105,37 @@ void MyWindow::OnGenerateInitialization( wxCommandEvent& event )
 {
 	std::ofstream streamOut("init.xml");
 
-	Node root("XML");
-	Node init("initialisation"); root.add(&init);
-	Node size("size", "100");	 init.add(&size);
+	Node root("initialisation");
 
-	root.print(streamOut);
+	Node input("inputs");
+	Node size("size", std::string(txtDomain->GetLineText(0))); input.add(&size);
+	Node res("resolution", std::string(txtRes->GetLineText(0))); input.add(&res);
+	Node time("sim_time", std::string(txtTime->GetLineText(0))); input.add(&time);
+	Node maxH("max_water_height", std::string(txtMaxHeight->GetLineText(0))); input.add(&maxH);
+	Node minH("min_water_height", std::string(txtMinHeight->GetLineText(0))); input.add(&minH);
+	Node thrshld("cell_threshold", std::string(txtInactiveHeight->GetLineText(0))); input.add(&thrshld);
+	Node info("extra_info", std::string(txtinfo->GetLineText(0))); input.add(&info);
+
+	Node init_sol("initial_solution");
+	int select = choiceDistribution->GetSelection();
+	Node dist("distribution", std::string(choiceDistribution->GetString(select))); init_sol.add(&dist);
+	Node centerX("centerX", std::string(txtMeanX1->GetLineText(0))); init_sol.add(&centerX);
+	Node centerY("centerY", std::string(txtMeanY1->GetLineText(0))); init_sol.add(&centerY);
+	Node widthX("widthX", std::string(txtVarX->GetLineText(0))); init_sol.add(&widthX);
+	Node widthY("widthY", std::string(txtVarY->GetLineText(0))); init_sol.add(&widthY);
+	Node height("height", std::string(txtDistHeight->GetLineText(0))); init_sol.add(&height);
+
+	Node topo("topography");
+	select = choiceTopo->GetSelection();
+	Node topo_type("topo_type", std::string(choiceTopo->GetString(select))); topo.add(&topo_type);
+	select = choiceBC->GetSelection();
+	Node boundaries("boundaries", std::string(choiceBC->GetString(select))); topo.add(&boundaries);
+
+	root.add(&input);
+	root.add(&init_sol);
+	root.add(&topo);
+
+	root.write(streamOut);
 }
 
 // ===================================================================

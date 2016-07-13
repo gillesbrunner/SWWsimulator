@@ -10,6 +10,7 @@
 
 #include "included.h"
 #include "main_window.h"
+#include "OSGviewer.h"
 
 typedef exprtk::symbol_table<double> symbol_table_t;
 typedef exprtk::expression<double>   expression_t;
@@ -18,6 +19,7 @@ typedef exprtk::parser<double>     	 parser_t;
 class MyWindow: public MainWindow {
 private :
 	Panel selectedPanel;
+	VisuPanel* pnlVisu;
 
 	expression_t _expression;
 	double _exprX;

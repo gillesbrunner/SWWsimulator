@@ -41,6 +41,7 @@ class MainWindow : public wxFrame
 	protected:
 		wxMenuBar* main_menu_bar;
 		wxMenu* menu_file;
+		wxFlexGridSizer* mainSizer;
 		wxStaticBitmap* btnInit;
 		wxStaticBitmap* btnSim;
 		wxStaticBitmap* btnView;
@@ -51,16 +52,16 @@ class MainWindow : public wxFrame
 		wxTextCtrl* txtTime;
 		wxStaticText* lblTime;
 		wxTextCtrl* txtRes;
-		wxStaticText* m_txtMaxHeight;
+		wxStaticText* lblMaxHeight;
 		wxTextCtrl* txtMaxHeight;
 		wxStaticText* lblMinHeight;
 		wxTextCtrl* txtMinHeight;
 		wxStaticText* lblInactivHeight;
 		wxTextCtrl* txtInactiveHeight;
 		wxStaticText* lblInfo;
-		wxTextCtrl* m_textCtrl7;
+		wxTextCtrl* txtinfo;
 		wxStaticText* lblDistribution;
-		wxChoice* choiseDistribution;
+		wxChoice* choiceDistribution;
 		wxStaticText* lblMean;
 		wxTextCtrl* txtMeanX1;
 		wxTextCtrl* txtMeanY1;
@@ -69,10 +70,10 @@ class MainWindow : public wxFrame
 		wxTextCtrl* txtVarY;
 		wxStaticText* lblHeight;
 		wxTextCtrl* txtDistHeight;
-		wxStaticText* lblTypo;
-		wxChoice* choiceTypo;
+		wxStaticText* lblTopo;
+		wxChoice* choiceTopo;
 		wxStaticText* txtBoudary;
-		wxChoice* choiseBC;
+		wxChoice* choiceBC;
 		wxButton* btnInit1;
 		wxPanel* pnlSim;
 		wxStaticText* lblNodes;
@@ -89,7 +90,6 @@ class MainWindow : public wxFrame
 		wxButton* btnStart;
 		wxStaticText* lblEstRemTiime;
 		wxStaticText* lblEstRemTime2;
-		wxPanel* pnlVisu;
 		
 		// Virtual event handlers, overide them in your derived class
 		virtual void OnExit( wxCommandEvent& event ) { event.Skip(); }

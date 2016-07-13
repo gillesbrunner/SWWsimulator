@@ -62,6 +62,7 @@ endif
 SRC = src
 BIN = bin
 EXEC = $(BIN)/SWWSim
+LIBS = -losg -losgProducer
 
 all: test_for_selected_wxbuild simulator
 
@@ -78,7 +79,7 @@ test_for_selected_wxbuild:
 	@$(WX_CONFIG) $(WX_CONFIG_FLAGS)
 	
 simulator: $(SIMULATOR_OBJECTS)
-	$(CXX) -o $(EXEC) $(SIMULATOR_OBJECTS) $(LDFLAGS) `$(WX_CONFIG) $(WX_CONFIG_FLAGS) --libs adv,core,base`
+	$(CXX) -o $(EXEC) $(SIMULATOR_OBJECTS) $(LIBS) $(LDFLAGS) `$(WX_CONFIG) $(WX_CONFIG_FLAGS) --libs adv,core,base`
 
 
 $(BIN)/%.o : $(SRC)/%.cpp

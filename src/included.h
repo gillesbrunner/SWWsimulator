@@ -29,11 +29,34 @@
 #include "wx/wfstream.h"
 #include <wx/app.h>
 
+// Open Scene Graph
+#include "wx/defs.h"
+#include "wx/cursor.h"
+#include "wx/glcanvas.h"
+#include <osgViewer/Viewer>
+
+#ifdef __BORLANDC__
+#pragma hdrstop
+#endif
+
+// For wxCURSOR_BLANK below, but isn't used a.t.m.
+#ifdef WIN32
+#include "wx/msw/wx.rc"
+#endif
+
+#include <osgViewer/ViewerEventHandlers>
+#include <osgGA/TrackballManipulator>
+#include <osgDB/ReadFile>
+#include <wx/image.h>
+#include <wx/menu.h>
+
+// Standards includes
 #include <unordered_map>
 #include <string>
 #include <fstream>
 #include <iostream>
 #include <vector>
+#include <stack>
 #include <unistd.h>
 #include <sstream>
 

@@ -23,7 +23,6 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	
 	this->SetMenuBar( main_menu_bar );
 	
-	wxFlexGridSizer* mainSizer;
 	mainSizer = new wxFlexGridSizer( 4, 1, 0, 0 );
 	mainSizer->AddGrowableCol( 0 );
 	mainSizer->SetFlexibleDirection( wxBOTH );
@@ -44,8 +43,6 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	mainSizer->Add( sizerButtons, 1, wxEXPAND, 5 );
 	
 	pnlInit = new wxPanel( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
-	pnlInit->Hide();
-	
 	wxFlexGridSizer* mainSizerInit;
 	mainSizerInit = new wxFlexGridSizer( 4, 1, 10, 0 );
 	mainSizerInit->SetFlexibleDirection( wxBOTH );
@@ -86,9 +83,9 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	
 	sizerInitValues->Add( txtRes, 0, wxALL, 5 );
 	
-	m_txtMaxHeight = new wxStaticText( pnlInit, wxID_ANY, wxT("Max Wave Height [km]:"), wxDefaultPosition, wxDefaultSize, 0 );
-	m_txtMaxHeight->Wrap( -1 );
-	sizerInitValues->Add( m_txtMaxHeight, 0, wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	lblMaxHeight = new wxStaticText( pnlInit, wxID_ANY, wxT("Max Wave Height [km]:"), wxDefaultPosition, wxDefaultSize, 0 );
+	lblMaxHeight->Wrap( -1 );
+	sizerInitValues->Add( lblMaxHeight, 0, wxALIGN_CENTER_VERTICAL|wxALL, 5 );
 	
 	txtMaxHeight = new wxTextCtrl( pnlInit, wxID_ANY, wxT("0.1"), wxDefaultPosition, wxDefaultSize, 0 );
 	txtMaxHeight->SetMinSize( wxSize( 100,-1 ) );
@@ -117,10 +114,10 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	lblInfo->Wrap( -1 );
 	sizerInitValues->Add( lblInfo, 0, wxALIGN_CENTER_VERTICAL|wxALL, 5 );
 	
-	m_textCtrl7 = new wxTextCtrl( pnlInit, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	m_textCtrl7->SetMinSize( wxSize( 200,-1 ) );
+	txtinfo = new wxTextCtrl( pnlInit, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
+	txtinfo->SetMinSize( wxSize( 200,-1 ) );
 	
-	sizerInitValues->Add( m_textCtrl7, 0, wxALL, 5 );
+	sizerInitValues->Add( txtinfo, 0, wxALL, 5 );
 	
 	sizerProbInput->Add( sizerInitValues, 1, wxEXPAND, 5 );
 	
@@ -138,11 +135,11 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	lblDistribution->Wrap( -1 );
 	sizerSol->Add( lblDistribution, 0, wxALIGN_CENTER_VERTICAL|wxALL, 5 );
 	
-	wxString choiseDistributionChoices[] = { wxT("Beta"), wxT("Normal"), wxT("Uniform") };
-	int choiseDistributionNChoices = sizeof( choiseDistributionChoices ) / sizeof( wxString );
-	choiseDistribution = new wxChoice( pnlInit, wxID_ANY, wxDefaultPosition, wxDefaultSize, choiseDistributionNChoices, choiseDistributionChoices, 0 );
-	choiseDistribution->SetSelection( 1 );
-	sizerSol->Add( choiseDistribution, 0, wxALL, 5 );
+	wxString choiceDistributionChoices[] = { wxT("Beta"), wxT("Normal"), wxT("Uniform") };
+	int choiceDistributionNChoices = sizeof( choiceDistributionChoices ) / sizeof( wxString );
+	choiceDistribution = new wxChoice( pnlInit, wxID_ANY, wxDefaultPosition, wxDefaultSize, choiceDistributionNChoices, choiceDistributionChoices, 0 );
+	choiceDistribution->SetSelection( 1 );
+	sizerSol->Add( choiceDistribution, 0, wxALL, 5 );
 	
 	lblMean = new wxStaticText( pnlInit, wxID_ANY, wxT("Center:"), wxDefaultPosition, wxDefaultSize, 0 );
 	lblMean->Wrap( -1 );
@@ -195,41 +192,41 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	
 	mainSizerInit->Add( sizerInitSol, 1, wxEXPAND, 5 );
 	
-	wxStaticBoxSizer* sizerTypo;
-	sizerTypo = new wxStaticBoxSizer( new wxStaticBox( pnlInit, wxID_ANY, wxT("Typography") ), wxVERTICAL );
+	wxStaticBoxSizer* sizerTopo;
+	sizerTopo = new wxStaticBoxSizer( new wxStaticBox( pnlInit, wxID_ANY, wxT("Topography") ), wxVERTICAL );
 	
-	wxFlexGridSizer* sizerInitTypo;
-	sizerInitTypo = new wxFlexGridSizer( 2, 2, 0, 160 );
-	sizerInitTypo->SetFlexibleDirection( wxBOTH );
-	sizerInitTypo->SetNonFlexibleGrowMode( wxFLEX_GROWMODE_SPECIFIED );
+	wxFlexGridSizer* sizerInitTopo;
+	sizerInitTopo = new wxFlexGridSizer( 2, 2, 0, 160 );
+	sizerInitTopo->SetFlexibleDirection( wxBOTH );
+	sizerInitTopo->SetNonFlexibleGrowMode( wxFLEX_GROWMODE_SPECIFIED );
 	
-	lblTypo = new wxStaticText( pnlInit, wxID_ANY, wxT("Typography :"), wxDefaultPosition, wxDefaultSize, 0 );
-	lblTypo->Wrap( -1 );
-	sizerInitTypo->Add( lblTypo, 0, wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	lblTopo = new wxStaticText( pnlInit, wxID_ANY, wxT("Topography :"), wxDefaultPosition, wxDefaultSize, 0 );
+	lblTopo->Wrap( -1 );
+	sizerInitTopo->Add( lblTopo, 0, wxALIGN_CENTER_VERTICAL|wxALL, 5 );
 	
-	wxString choiceTypoChoices[] = { wxT("Flat"), wxT("Sinus"), wxT("Island"), wxT("Create New") };
-	int choiceTypoNChoices = sizeof( choiceTypoChoices ) / sizeof( wxString );
-	choiceTypo = new wxChoice( pnlInit, wxID_ANY, wxDefaultPosition, wxDefaultSize, choiceTypoNChoices, choiceTypoChoices, 0 );
-	choiceTypo->SetSelection( 0 );
-	choiceTypo->SetMinSize( wxSize( 150,-1 ) );
+	wxString choiceTopoChoices[] = { wxT("Flat"), wxT("Sinus"), wxT("Island"), wxT("Create New") };
+	int choiceTopoNChoices = sizeof( choiceTopoChoices ) / sizeof( wxString );
+	choiceTopo = new wxChoice( pnlInit, wxID_ANY, wxDefaultPosition, wxDefaultSize, choiceTopoNChoices, choiceTopoChoices, 0 );
+	choiceTopo->SetSelection( 0 );
+	choiceTopo->SetMinSize( wxSize( 150,-1 ) );
 	
-	sizerInitTypo->Add( choiceTypo, 0, wxALL, 5 );
+	sizerInitTopo->Add( choiceTopo, 0, wxALL, 5 );
 	
 	txtBoudary = new wxStaticText( pnlInit, wxID_ANY, wxT("Boundary Conditions:"), wxDefaultPosition, wxDefaultSize, 0 );
 	txtBoudary->Wrap( -1 );
-	sizerInitTypo->Add( txtBoudary, 0, wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	sizerInitTopo->Add( txtBoudary, 0, wxALIGN_CENTER_VERTICAL|wxALL, 5 );
 	
-	wxString choiseBCChoices[] = { wxT("Absorbing"), wxT("Periodic"), wxT("Reflecting") };
-	int choiseBCNChoices = sizeof( choiseBCChoices ) / sizeof( wxString );
-	choiseBC = new wxChoice( pnlInit, wxID_ANY, wxDefaultPosition, wxDefaultSize, choiseBCNChoices, choiseBCChoices, 0 );
-	choiseBC->SetSelection( 2 );
-	choiseBC->SetMinSize( wxSize( 150,-1 ) );
+	wxString choiceBCChoices[] = { wxT("Absorbing"), wxT("Periodic"), wxT("Reflecting") };
+	int choiceBCNChoices = sizeof( choiceBCChoices ) / sizeof( wxString );
+	choiceBC = new wxChoice( pnlInit, wxID_ANY, wxDefaultPosition, wxDefaultSize, choiceBCNChoices, choiceBCChoices, 0 );
+	choiceBC->SetSelection( 2 );
+	choiceBC->SetMinSize( wxSize( 150,-1 ) );
 	
-	sizerInitTypo->Add( choiseBC, 0, wxALL, 5 );
+	sizerInitTopo->Add( choiceBC, 0, wxALL, 5 );
 	
-	sizerTypo->Add( sizerInitTypo, 1, wxEXPAND, 5 );
+	sizerTopo->Add( sizerInitTopo, 1, wxEXPAND, 5 );
 	
-	mainSizerInit->Add( sizerTypo, 1, wxEXPAND, 5 );
+	mainSizerInit->Add( sizerTopo, 1, wxEXPAND, 5 );
 	
 	btnInit1 = new wxButton( pnlInit, wxID_ANY, wxT("Generate File"), wxDefaultPosition, wxDefaultSize, 0 );
 	mainSizerInit->Add( btnInit1, 0, wxALIGN_BOTTOM|wxALIGN_RIGHT|wxALL, 5 );
@@ -343,17 +340,6 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	mainSizerSim->Fit( pnlSim );
 	mainSizer->Add( pnlSim, 1, wxALIGN_TOP|wxALL|wxEXPAND, 5 );
 	
-	pnlVisu = new wxPanel( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
-	wxFlexGridSizer* mainSizerVisu;
-	mainSizerVisu = new wxFlexGridSizer( 2, 2, 0, 0 );
-	mainSizerVisu->SetFlexibleDirection( wxBOTH );
-	mainSizerVisu->SetNonFlexibleGrowMode( wxFLEX_GROWMODE_SPECIFIED );
-	
-	pnlVisu->SetSizer( mainSizerVisu );
-	pnlVisu->Layout();
-	mainSizerVisu->Fit( pnlVisu );
-	mainSizer->Add( pnlVisu, 1, wxEXPAND | wxALL, 5 );
-	
 	this->SetSizer( mainSizer );
 	this->Layout();
 	
@@ -362,8 +348,8 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	btnInit->Connect( wxEVT_MOTION, wxMouseEventHandler( MainWindow::OnInitMotion ), NULL, this );
 	btnSim->Connect( wxEVT_MOTION, wxMouseEventHandler( MainWindow::OnSimMotion ), NULL, this );
 	btnView->Connect( wxEVT_MOTION, wxMouseEventHandler( MainWindow::OnVisuMotion ), NULL, this );
-	choiceTypo->Connect( wxEVT_COMMAND_CHOICE_SELECTED, wxCommandEventHandler( MainWindow::OnChooseTypo ), NULL, this );
-	choiseBC->Connect( wxEVT_COMMAND_CHOICE_SELECTED, wxCommandEventHandler( MainWindow::OnChooseBoundary ), NULL, this );
+	choiceTopo->Connect( wxEVT_COMMAND_CHOICE_SELECTED, wxCommandEventHandler( MainWindow::OnChooseTypo ), NULL, this );
+	choiceBC->Connect( wxEVT_COMMAND_CHOICE_SELECTED, wxCommandEventHandler( MainWindow::OnChooseBoundary ), NULL, this );
 	btnInit1->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( MainWindow::OnGenerateInitialization ), NULL, this );
 	choiceMethod->Connect( wxEVT_COMMAND_CHOICE_SELECTED, wxCommandEventHandler( MainWindow::OnMethodSelect ), NULL, this );
 }
@@ -375,8 +361,8 @@ MainWindow::~MainWindow()
 	btnInit->Disconnect( wxEVT_MOTION, wxMouseEventHandler( MainWindow::OnInitMotion ), NULL, this );
 	btnSim->Disconnect( wxEVT_MOTION, wxMouseEventHandler( MainWindow::OnSimMotion ), NULL, this );
 	btnView->Disconnect( wxEVT_MOTION, wxMouseEventHandler( MainWindow::OnVisuMotion ), NULL, this );
-	choiceTypo->Disconnect( wxEVT_COMMAND_CHOICE_SELECTED, wxCommandEventHandler( MainWindow::OnChooseTypo ), NULL, this );
-	choiseBC->Disconnect( wxEVT_COMMAND_CHOICE_SELECTED, wxCommandEventHandler( MainWindow::OnChooseBoundary ), NULL, this );
+	choiceTopo->Disconnect( wxEVT_COMMAND_CHOICE_SELECTED, wxCommandEventHandler( MainWindow::OnChooseTypo ), NULL, this );
+	choiceBC->Disconnect( wxEVT_COMMAND_CHOICE_SELECTED, wxCommandEventHandler( MainWindow::OnChooseBoundary ), NULL, this );
 	btnInit1->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( MainWindow::OnGenerateInitialization ), NULL, this );
 	choiceMethod->Disconnect( wxEVT_COMMAND_CHOICE_SELECTED, wxCommandEventHandler( MainWindow::OnMethodSelect ), NULL, this );
 }

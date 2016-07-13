@@ -14,7 +14,7 @@
         <property name="internationalize">0</property>
         <property name="name">SWWsimulator</property>
         <property name="namespace"></property>
-        <property name="path">/home/gbrunner/Documents/Programmation/ShallowWaterWaveSimulator/src</property>
+        <property name="path">/home/gbrunner/Documents/Programmation/SWWsimulator/src</property>
         <property name="precompiled_header"></property>
         <property name="relative_path">1</property>
         <property name="use_enum">0</property>
@@ -153,14 +153,14 @@
                 <property name="minimum_size">-1,-1</property>
                 <property name="name">mainSizer</property>
                 <property name="non_flexible_grow_mode">wxFLEX_GROWMODE_ALL</property>
-                <property name="permission">none</property>
+                <property name="permission">protected</property>
                 <property name="rows">4</property>
                 <property name="vgap">0</property>
                 <object class="sizeritem" expanded="1">
                     <property name="border">5</property>
                     <property name="flag">wxEXPAND</property>
                     <property name="proportion">1</property>
-                    <object class="wxBoxSizer" expanded="0">
+                    <object class="wxBoxSizer" expanded="1">
                         <property name="minimum_size"></property>
                         <property name="name">sizerButtons</property>
                         <property name="orient">wxHORIZONTAL</property>
@@ -336,7 +336,7 @@
                         <property name="enabled">1</property>
                         <property name="fg"></property>
                         <property name="font"></property>
-                        <property name="hidden">1</property>
+                        <property name="hidden">0</property>
                         <property name="id">wxID_ANY</property>
                         <property name="maximum_size"></property>
                         <property name="minimum_size"></property>
@@ -392,7 +392,7 @@
                                 <property name="border">5</property>
                                 <property name="flag">wxEXPAND</property>
                                 <property name="proportion">1</property>
-                                <object class="wxStaticBoxSizer" expanded="0">
+                                <object class="wxStaticBoxSizer" expanded="1">
                                     <property name="id">wxID_ANY</property>
                                     <property name="label">Problem Inputs</property>
                                     <property name="minimum_size"></property>
@@ -404,7 +404,7 @@
                                         <property name="border">5</property>
                                         <property name="flag">wxEXPAND</property>
                                         <property name="proportion">1</property>
-                                        <object class="wxFlexGridSizer" expanded="0">
+                                        <object class="wxFlexGridSizer" expanded="1">
                                             <property name="cols">2</property>
                                             <property name="flexible_direction">wxBOTH</property>
                                             <property name="growablecols"></property>
@@ -773,7 +773,7 @@
                                                     <property name="label">Max Wave Height [km]:</property>
                                                     <property name="maximum_size"></property>
                                                     <property name="minimum_size"></property>
-                                                    <property name="name">m_txtMaxHeight</property>
+                                                    <property name="name">lblMaxHeight</property>
                                                     <property name="permission">protected</property>
                                                     <property name="pos"></property>
                                                     <property name="size"></property>
@@ -1170,7 +1170,7 @@
                                                     <property name="maximum_size"></property>
                                                     <property name="maxlength">0</property>
                                                     <property name="minimum_size">200,-1</property>
-                                                    <property name="name">m_textCtrl7</property>
+                                                    <property name="name">txtinfo</property>
                                                     <property name="permission">protected</property>
                                                     <property name="pos"></property>
                                                     <property name="size"></property>
@@ -1316,7 +1316,7 @@
                                                     <property name="id">wxID_ANY</property>
                                                     <property name="maximum_size"></property>
                                                     <property name="minimum_size"></property>
-                                                    <property name="name">choiseDistribution</property>
+                                                    <property name="name">choiceDistribution</property>
                                                     <property name="permission">protected</property>
                                                     <property name="pos"></property>
                                                     <property name="selection">1</property>
@@ -1848,9 +1848,9 @@
                                 <property name="proportion">1</property>
                                 <object class="wxStaticBoxSizer" expanded="0">
                                     <property name="id">wxID_ANY</property>
-                                    <property name="label">Typography</property>
+                                    <property name="label">Topography</property>
                                     <property name="minimum_size"></property>
-                                    <property name="name">sizerTypo</property>
+                                    <property name="name">sizerTopo</property>
                                     <property name="orient">wxVERTICAL</property>
                                     <property name="permission">none</property>
                                     <event name="OnUpdateUI"></event>
@@ -1865,7 +1865,7 @@
                                             <property name="growablerows"></property>
                                             <property name="hgap">160</property>
                                             <property name="minimum_size"></property>
-                                            <property name="name">sizerInitTypo</property>
+                                            <property name="name">sizerInitTopo</property>
                                             <property name="non_flexible_grow_mode">wxFLEX_GROWMODE_SPECIFIED</property>
                                             <property name="permission">none</property>
                                             <property name="rows">2</property>
@@ -1882,10 +1882,10 @@
                                                     <property name="font"></property>
                                                     <property name="hidden">0</property>
                                                     <property name="id">wxID_ANY</property>
-                                                    <property name="label">Typography :</property>
+                                                    <property name="label">Topography :</property>
                                                     <property name="maximum_size"></property>
                                                     <property name="minimum_size"></property>
-                                                    <property name="name">lblTypo</property>
+                                                    <property name="name">lblTopo</property>
                                                     <property name="permission">protected</property>
                                                     <property name="pos"></property>
                                                     <property name="size"></property>
@@ -1940,7 +1940,7 @@
                                                     <property name="id">wxID_ANY</property>
                                                     <property name="maximum_size"></property>
                                                     <property name="minimum_size">150,-1</property>
-                                                    <property name="name">choiceTypo</property>
+                                                    <property name="name">choiceTopo</property>
                                                     <property name="permission">protected</property>
                                                     <property name="pos"></property>
                                                     <property name="selection">0</property>
@@ -2050,7 +2050,7 @@
                                                     <property name="id">wxID_ANY</property>
                                                     <property name="maximum_size"></property>
                                                     <property name="minimum_size">150,-1</property>
-                                                    <property name="name">choiseBC</property>
+                                                    <property name="name">choiceBC</property>
                                                     <property name="permission">protected</property>
                                                     <property name="pos"></property>
                                                     <property name="selection">2</property>
@@ -3077,71 +3077,6 @@
                                     </object>
                                 </object>
                             </object>
-                        </object>
-                    </object>
-                </object>
-                <object class="sizeritem" expanded="1">
-                    <property name="border">5</property>
-                    <property name="flag">wxEXPAND | wxALL</property>
-                    <property name="proportion">1</property>
-                    <object class="wxPanel" expanded="0">
-                        <property name="bg"></property>
-                        <property name="context_help"></property>
-                        <property name="enabled">1</property>
-                        <property name="fg"></property>
-                        <property name="font"></property>
-                        <property name="hidden">0</property>
-                        <property name="id">wxID_ANY</property>
-                        <property name="maximum_size"></property>
-                        <property name="minimum_size"></property>
-                        <property name="name">pnlVisu</property>
-                        <property name="permission">protected</property>
-                        <property name="pos"></property>
-                        <property name="size"></property>
-                        <property name="subclass"></property>
-                        <property name="tooltip"></property>
-                        <property name="validator_data_type"></property>
-                        <property name="validator_style">wxFILTER_NONE</property>
-                        <property name="validator_type">wxDefaultValidator</property>
-                        <property name="validator_variable"></property>
-                        <property name="window_extra_style"></property>
-                        <property name="window_name"></property>
-                        <property name="window_style">wxTAB_TRAVERSAL</property>
-                        <event name="OnChar"></event>
-                        <event name="OnEnterWindow"></event>
-                        <event name="OnEraseBackground"></event>
-                        <event name="OnKeyDown"></event>
-                        <event name="OnKeyUp"></event>
-                        <event name="OnKillFocus"></event>
-                        <event name="OnLeaveWindow"></event>
-                        <event name="OnLeftDClick"></event>
-                        <event name="OnLeftDown"></event>
-                        <event name="OnLeftUp"></event>
-                        <event name="OnMiddleDClick"></event>
-                        <event name="OnMiddleDown"></event>
-                        <event name="OnMiddleUp"></event>
-                        <event name="OnMotion"></event>
-                        <event name="OnMouseEvents"></event>
-                        <event name="OnMouseWheel"></event>
-                        <event name="OnPaint"></event>
-                        <event name="OnRightDClick"></event>
-                        <event name="OnRightDown"></event>
-                        <event name="OnRightUp"></event>
-                        <event name="OnSetFocus"></event>
-                        <event name="OnSize"></event>
-                        <event name="OnUpdateUI"></event>
-                        <object class="wxFlexGridSizer" expanded="1">
-                            <property name="cols">2</property>
-                            <property name="flexible_direction">wxBOTH</property>
-                            <property name="growablecols"></property>
-                            <property name="growablerows"></property>
-                            <property name="hgap">0</property>
-                            <property name="minimum_size"></property>
-                            <property name="name">mainSizerVisu</property>
-                            <property name="non_flexible_grow_mode">wxFLEX_GROWMODE_SPECIFIED</property>
-                            <property name="permission">none</property>
-                            <property name="rows">2</property>
-                            <property name="vgap">0</property>
                         </object>
                     </object>
                 </object>
