@@ -12,17 +12,15 @@ BEGIN_EVENT_TABLE(VisuPanel, wxPanel)
 END_EVENT_TABLE()
 
 /* My frame constructor */
-VisuPanel::VisuPanel(wxWindow *frame, const wxWindowID& id, const wxPoint& pos,
+VisuPanel::VisuPanel(wxWindow *frame, MyWindow* main, const wxWindowID& id, const wxPoint& pos,
     const wxSize& size, long style)
-    : wxPanel(frame, id, pos, size, style)
+    : wxPanel(frame, id, pos, size, style),
+	  _mainWindow(main)
 {
 	Show();
 	CreateCanvas();
-}
 
-void VisuPanel::SetViewer(osgViewer::Viewer *viewer)
-{
-    _viewer = viewer;
+	root = new osg::Group();
 }
 
 void VisuPanel::OnIdle(wxIdleEvent &event)
@@ -36,6 +34,7 @@ void VisuPanel::CreateCanvas()
 {
 	// create osg canvas
 	//    - initialize
+
 	int *attributes = new int[7];
 	attributes[0] = int(WX_GL_DOUBLEBUFFER);
 	attributes[1] = WX_GL_RGBA;
@@ -45,8 +44,8 @@ void VisuPanel::CreateCanvas()
 	attributes[5] = 8;
 	attributes[6] = 0;
 
-	int width  = 800;
-	int height = 600;
+	int width  = 1920;
+	int height = 1200;
 
 	OSGCanvas *canvas = new OSGCanvas(this, wxID_ANY, wxDefaultPosition,
 	wxSize(width, height), wxSUNKEN_BORDER, wxT("osgviewerWX"), attributes);
@@ -62,15 +61,21 @@ void VisuPanel::CreateCanvas()
 	viewer->setThreadingModel(osgViewer::Viewer::SingleThreaded);
 
 	// load the scene.
-	wxString fname("cessna.osg");
+	/*wxString fname("cessna.osg");
 	osg::ref_ptr<osg::Node> loadedModel = osgDB::readNodeFile(std::string(fname.mb_str()));
 	if (!loadedModel)
 	{
 		std::cout <<" No data loaded." << std::endl;
 	    return;
 	}
-
 	viewer->setSceneData(loadedModel.get());
+	*/
+
+	if (_mainWindow->simGrid)
+	{
+		_mainWindow->simGrid->render(root);
+		viewer->setSceneData(root);
+	}
 	viewer->setCameraManipulator(new osgGA::TrackballManipulator);
 	SetViewer(viewer);
 }

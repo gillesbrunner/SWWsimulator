@@ -352,6 +352,9 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	
 	staticsizerManagment = new wxStaticBoxSizer( new wxStaticBox( pnlVisu, wxID_ANY, wxT("Solution Visualisation") ), wxVERTICAL );
 	
+	btnload = new wxButton( pnlVisu, wxID_ANY, wxT("Load Data"), wxDefaultPosition, wxDefaultSize, 0 );
+	staticsizerManagment->Add( btnload, 0, wxALL, 5 );
+	
 	mainSizerVisu->Add( staticsizerManagment, 1, wxEXPAND, 5 );
 	
 	pnlVisu->SetSizer( mainSizerVisu );
@@ -371,6 +374,7 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	choiceBC->Connect( wxEVT_COMMAND_CHOICE_SELECTED, wxCommandEventHandler( MainWindow::OnChooseBoundary ), NULL, this );
 	btnInit1->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( MainWindow::OnGenerateInitialization ), NULL, this );
 	choiceMethod->Connect( wxEVT_COMMAND_CHOICE_SELECTED, wxCommandEventHandler( MainWindow::OnMethodSelect ), NULL, this );
+	btnload->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( MainWindow::OnLoadDataClick ), NULL, this );
 }
 
 MainWindow::~MainWindow()
@@ -384,4 +388,5 @@ MainWindow::~MainWindow()
 	choiceBC->Disconnect( wxEVT_COMMAND_CHOICE_SELECTED, wxCommandEventHandler( MainWindow::OnChooseBoundary ), NULL, this );
 	btnInit1->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( MainWindow::OnGenerateInitialization ), NULL, this );
 	choiceMethod->Disconnect( wxEVT_COMMAND_CHOICE_SELECTED, wxCommandEventHandler( MainWindow::OnMethodSelect ), NULL, this );
+	btnload->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( MainWindow::OnLoadDataClick ), NULL, this );
 }

@@ -6,9 +6,19 @@
  */
 #include "XMLFile.h"
 
+Node::Node()
+: level(0)
+{
+	name = "";
+	value = "";
+}
+
 Node::Node(std::string NAME, std::string VALUE)
-: name(NAME), value(VALUE), level(0)
-{}
+: level(0)
+{
+	name = NAME;
+	value = VALUE;
+}
 
 void Node::add(Node* child)
 {

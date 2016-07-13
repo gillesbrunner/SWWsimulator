@@ -15,7 +15,8 @@ public:
 	std::string name;
 	std::string value;
 
-	Node(std::string name = "", std::string value = "");
+	Node();
+	Node(std::string name, std::string value = "");
 
 	void write(std::ofstream& str);
 	static Node read(std::string const& file, size_t& pos);

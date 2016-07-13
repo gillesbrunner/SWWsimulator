@@ -47,6 +47,7 @@
 #include <osgViewer/ViewerEventHandlers>
 #include <osgGA/TrackballManipulator>
 #include <osgDB/ReadFile>
+#include <osg/PositionAttitudeTransform>
 #include <wx/image.h>
 #include <wx/menu.h>
 
@@ -60,13 +61,20 @@
 #include <unistd.h>
 #include <sstream>
 
-#include "panel_ids.h"
 #include "XMLFile.h"
+#include "panel_ids.h"
 #include "exprtk/exprtk.hpp"
+
+#include "Grid.h"
+#include "OSGviewer.h"
+#include "MyWindow.h"
+
 
 #define ROES 0x1
 #define WENO 0x2
 #define PARA 0x4
 #define PAPA 0x8
+
+typedef unsigned int uint;
 
 #endif /* SRC_INCLUDED_H_ */

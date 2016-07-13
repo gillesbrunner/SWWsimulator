@@ -26,7 +26,7 @@ macro( config_project PROJNAME LIBNAME )
 endmacro()
 
 # Precompiled headers
-set(_header_filename "src/included.h")
+set(_header_filename "bin/precompiled")
 
 function(get_gcc_flags target_name)
   # CMake does not provide an easy way to get all compiler switches,

@@ -6,12 +6,11 @@
  */
 
 #include "MyWindow.h"
-#include "OSGviewer.h"
 
 MyWindow::MyWindow()
 : MainWindow((wxFrame *)NULL)
 {
-	selectedPanel = INITIALISATION;
+	_selectedPanel = INITIALISATION;
 	pnlInit->Show();
 	pnlSim->Hide();
 	pnlVisu->Hide();
@@ -19,17 +18,17 @@ MyWindow::MyWindow()
 
 MyWindow::~MyWindow()
 {
-	delete OSGview
+	delete _OSGview;
 }
 
 void MyWindow::OnExit(wxCommandEvent& event) { ::wxExit(); }
 
 void MyWindow::OnInitMotion( wxMouseEvent& event )
 {
-	if (selectedPanel != INITIALISATION)
+	if (_selectedPanel != INITIALISATION)
 	{
 		pnlInit->Show();
-		selectedPanel = INITIALISATION;
+		_selectedPanel = INITIALISATION;
 
 		pnlSim->Hide();
 		pnlVisu->Hide();
@@ -39,10 +38,10 @@ void MyWindow::OnInitMotion( wxMouseEvent& event )
 
 void MyWindow::OnSimMotion( wxMouseEvent& event )
 {
-	if (selectedPanel != SIMULATION)
+	if (_selectedPanel != SIMULATION)
 	{
 		pnlSim->Show();
-		selectedPanel = SIMULATION;
+		_selectedPanel = SIMULATION;
 
 		pnlInit->Hide();
 		pnlVisu->Hide();
@@ -52,15 +51,15 @@ void MyWindow::OnSimMotion( wxMouseEvent& event )
 
 void MyWindow::OnVisuMotion( wxMouseEvent& event )
 {
-	if (selectedPanel != VISUALISATION)
+	if (_selectedPanel != VISUALISATION)
 	{
 		pnlVisu->Show();
-		if (!OSGview)
+		if (!_OSGview)
 		{
-			OSGview = new VisuPanel( pnlVisu, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
-			staticsizerManagment->Add(OSGview, 1, wxALIGN_TOP|wxALL|wxEXPAND, 5 );
+			_OSGview = new VisuPanel( pnlVisu, this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
+			staticsizerManagment->Add(_OSGview, 1, wxALIGN_TOP|wxALL|wxEXPAND, 5 );
 		}
-		selectedPanel = VISUALISATION;
+		_selectedPanel = VISUALISATION;
 
 		pnlInit->Hide();
 		pnlSim->Hide();
@@ -141,6 +140,14 @@ void MyWindow::OnGenerateInitialization( wxCommandEvent& event )
 	root.write(streamOut);
 }
 
+void MyWindow::OnLoadDataClick( wxCommandEvent& event )
+{
+	if (simGrid) delete simGrid;
+
+	simGrid = new Grid(1000, 10);
+	simGrid->render(_OSGview->root);
+	_OSGview->GetViewer()->setSceneData(_OSGview->root);
+}
 // ===================================================================
 void MyWindow::InitExpression(std::string expression_string)
 {

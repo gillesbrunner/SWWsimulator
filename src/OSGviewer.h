@@ -11,6 +11,7 @@
 #include "included.h"
 
 class GraphicsWindowWX;
+class MyWindow;
 
 class OSGCanvas : public wxGLCanvas
 {
@@ -76,17 +77,24 @@ private:
 class VisuPanel : public wxPanel
 {
 public:
-	VisuPanel(wxWindow *frame, const wxWindowID& id,
+	osg::ref_ptr<osg::Group> root;
+
+	VisuPanel(wxWindow* frame, MyWindow* main, const wxWindowID& id,
 			const wxPoint& pos, const wxSize& size,
 			long style = wxDEFAULT_FRAME_STYLE);
 
-	void SetViewer(osgViewer::Viewer *viewer);
+	void 				SetViewer(osgViewer::Viewer *viewer) { _viewer = viewer; }
+	osgViewer::Viewer * GetViewer() 						 { return _viewer  ; }
+
 	void OnIdle(wxIdleEvent& event);
 	void CreateCanvas();
+
 private:
+	MyWindow* _mainWindow;
 	wxFlexGridSizer* mainSizerVisu;
 
 	osg::ref_ptr<osgViewer::Viewer> _viewer;
+
 	DECLARE_EVENT_TABLE()
 };
 
