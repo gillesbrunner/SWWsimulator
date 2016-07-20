@@ -144,9 +144,18 @@ void MyWindow::OnLoadDataClick( wxCommandEvent& event )
 {
 	if (simGrid) delete simGrid;
 
-	simGrid = new Grid(1000, 10);
-	simGrid->render(_OSGview->root);
-	_OSGview->GetViewer()->setSceneData(_OSGview->root);
+	try {
+		simGrid = new Grid(100, 50);
+		simGrid->render(_OSGview->root);
+		_OSGview->GetViewer()->setSceneData(_OSGview->root);
+	}
+	catch (std::string error)
+	{
+		std::cout << error << std::endl;
+		//wxMessageDialog(this, wxString(error),
+		//		wxMessageBoxCaptionStr, wxICON_ERROR|wxOK|wxCENTER);
+	}
+
 }
 // ===================================================================
 void MyWindow::InitExpression(std::string expression_string)

@@ -60,6 +60,8 @@
 #include <stack>
 #include <unistd.h>
 #include <sstream>
+#include <stdio.h>
+#include <assert.h>
 
 #include "XMLFile.h"
 #include "panel_ids.h"

@@ -71,11 +71,6 @@ void VisuPanel::CreateCanvas()
 	viewer->setSceneData(loadedModel.get());
 	*/
 
-	if (_mainWindow->simGrid)
-	{
-		_mainWindow->simGrid->render(root);
-		viewer->setSceneData(root);
-	}
 	viewer->setCameraManipulator(new osgGA::TrackballManipulator);
 	SetViewer(viewer);
 }

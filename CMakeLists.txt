@@ -6,7 +6,7 @@ set(EXEC SWWsimulator)
 set(CMAKE_BUILD_TYPE DEBUG)
 set(CMAKE_CXX_COMPILER g++)
 
-set(CMAKE_CXX_FLAGS "-std=c++11 -Wall -lz")
+set(CMAKE_CXX_FLAGS "-std=c++11 -Wall -lz -ltiff")
 set(CMAKE_CXX_FLAGS_DEBUG "-O0 -g ${CMAKE_CXX_FLAGS}")
 set(CMAKE_CXX_FLAGS_RELEASE "-O2 ${CMAKE_CXX_FLAGS}")
 
@@ -19,11 +19,6 @@ find_package( osgViewer )
 set( wxWidgets_CONFIGURATION mswu )
 find_package( wxWidgets COMPONENTS gl core base REQUIRED )
 include(${wxWidgets_USE_FILE})
-
-macro( config_project PROJNAME LIBNAME )
-	include_directories( ${${LIBNAME}_INCLUDE_DIR} )
-	target_link_libraries( ${PROJNAME} ${${LIBNAME}_LIBRARY} )
-endmacro()
 
 # Precompiled headers
 set(_header_filename "bin/precompiled")
@@ -136,9 +131,20 @@ add_executable( ${EXEC} ${SRC})
 add_pch(${EXEC} "src/included.h")
 
 # Link the libraries
+macro( config_project PROJNAME LIBNAME )
+	include_directories( ${${LIBNAME}_INCLUDE_DIR} )
+	target_link_libraries( ${PROJNAME} ${${LIBNAME}_LIBRARY} )
+endmacro()
+
+set(libtiff_INCLUDE_DIR /usr/local/include)
+set(libtiff_LIBRARY /usr/local/lib/libtiff.so)
+
+config_project( ${EXEC} libtiff)
 config_project( ${EXEC} OSG )
 config_project( ${EXEC} OSGGA )
 config_project( ${EXEC} OSGDB )
 config_project( ${EXEC} OSGUTIL )
 config_project( ${EXEC} OSGVIEWER )
+
+
 target_link_libraries( ${EXEC} ${wxWidgets_LIBRARIES} )
