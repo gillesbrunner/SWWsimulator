@@ -1,0 +1,1608 @@
+The system is: Linux - 4.2.0-41-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/3.2.2/CompilerIdC/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1963842912/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1963842912.dir/build.make CMakeFiles/cmTryCompileExec1963842912.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1963842912.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1963842912.dir/testCCompiler.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec1963842912
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1963842912.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1963842912.dir/testCCompiler.c.o  -o cmTryCompileExec1963842912 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec814478660/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec814478660.dir/build.make CMakeFiles/cmTryCompileExec814478660.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec814478660.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec814478660.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec814478660
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec814478660.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTryCompileExec814478660.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec814478660 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.2.1-22ubuntu2' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 5.2.1 20151010 (Ubuntu 5.2.1-22ubuntu2) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec814478660' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cckhaiUW.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec814478660 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec814478660.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec814478660/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec814478660.dir/build.make CMakeFiles/cmTryCompileExec814478660.dir/build]
+  ignore line: [make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec814478660.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec814478660.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec814478660]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec814478660.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTryCompileExec814478660.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec814478660 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.2.1-22ubuntu2' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 5.2.1 20151010 (Ubuntu 5.2.1-22ubuntu2) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec814478660' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cckhaiUW.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec814478660 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec814478660.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cckhaiUW.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec814478660] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
+    arg [CMakeFiles/cmTryCompileExec814478660.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5] ==> [/usr/lib/gcc/x86_64-linux-gnu/5]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/5;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2266232842/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2266232842.dir/build.make CMakeFiles/cmTryCompileExec2266232842.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2266232842.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTryCompileExec2266232842.dir/feature_tests.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec2266232842
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2266232842.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2266232842.dir/feature_tests.c.o  -o cmTryCompileExec2266232842 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1780375094/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1780375094.dir/build.make CMakeFiles/cmTryCompileExec1780375094.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1780375094.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTryCompileExec1780375094.dir/feature_tests.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec1780375094
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1780375094.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1780375094.dir/feature_tests.c.o  -o cmTryCompileExec1780375094 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3553740436/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3553740436.dir/build.make CMakeFiles/cmTryCompileExec3553740436.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3553740436.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTryCompileExec3553740436.dir/feature_tests.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec3553740436
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3553740436.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3553740436.dir/feature_tests.c.o  -o cmTryCompileExec3553740436 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Performing C SOURCE FILE Test C_FLAG_Wall succeded with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4219986433/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4219986433.dir/build.make CMakeFiles/cmTryCompileExec4219986433.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4219986433.dir/src.c.o
+/usr/bin/cc   -DC_FLAG_Wall   -Wall -o CMakeFiles/cmTryCompileExec4219986433.dir/src.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec4219986433
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4219986433.dir/link.txt --verbose=1
+/usr/bin/cc   -DC_FLAG_Wall    CMakeFiles/cmTryCompileExec4219986433.dir/src.c.o  -o cmTryCompileExec4219986433 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_FLAG_Winline succeded with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3011563133/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3011563133.dir/build.make CMakeFiles/cmTryCompileExec3011563133.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3011563133.dir/src.c.o
+/usr/bin/cc   -Wall -DC_FLAG_Winline   -Winline -o CMakeFiles/cmTryCompileExec3011563133.dir/src.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3011563133
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3011563133.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -DC_FLAG_Winline    CMakeFiles/cmTryCompileExec3011563133.dir/src.c.o  -o cmTryCompileExec3011563133 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_FLAG_W succeded with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2465961234/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2465961234.dir/build.make CMakeFiles/cmTryCompileExec2465961234.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2465961234.dir/src.c.o
+/usr/bin/cc   -Wall -Winline -DC_FLAG_W   -W -o CMakeFiles/cmTryCompileExec2465961234.dir/src.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2465961234
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2465961234.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -DC_FLAG_W    CMakeFiles/cmTryCompileExec2465961234.dir/src.c.o  -o cmTryCompileExec2465961234 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_FLAG_Wformat_security succeded with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3741166209/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3741166209.dir/build.make CMakeFiles/cmTryCompileExec3741166209.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3741166209.dir/src.c.o
+/usr/bin/cc   -Wall -Winline -W -DC_FLAG_Wformat_security   -Wformat-security -o CMakeFiles/cmTryCompileExec3741166209.dir/src.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3741166209
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3741166209.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -DC_FLAG_Wformat_security    CMakeFiles/cmTryCompileExec3741166209.dir/src.c.o  -o cmTryCompileExec3741166209 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_FLAG_Wpointer_arith succeded with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec957062513/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec957062513.dir/build.make CMakeFiles/cmTryCompileExec957062513.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec957062513.dir/src.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -DC_FLAG_Wpointer_arith   -Wpointer-arith -o CMakeFiles/cmTryCompileExec957062513.dir/src.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec957062513
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec957062513.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -DC_FLAG_Wpointer_arith    CMakeFiles/cmTryCompileExec957062513.dir/src.c.o  -o cmTryCompileExec957062513 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_FLAG_Wdisabled_optimization succeded with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec720363634/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec720363634.dir/build.make CMakeFiles/cmTryCompileExec720363634.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec720363634.dir/src.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -DC_FLAG_Wdisabled_optimization   -Wdisabled-optimization -o CMakeFiles/cmTryCompileExec720363634.dir/src.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec720363634
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec720363634.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -DC_FLAG_Wdisabled_optimization    CMakeFiles/cmTryCompileExec720363634.dir/src.c.o  -o cmTryCompileExec720363634 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_FLAG_Wno_unknown_pragmas succeded with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3948262943/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3948262943.dir/build.make CMakeFiles/cmTryCompileExec3948262943.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3948262943.dir/src.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -DC_FLAG_Wno_unknown_pragmas   -Wno-unknown-pragmas -o CMakeFiles/cmTryCompileExec3948262943.dir/src.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3948262943
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3948262943.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -DC_FLAG_Wno_unknown_pragmas    CMakeFiles/cmTryCompileExec3948262943.dir/src.c.o  -o cmTryCompileExec3948262943 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_FLAG_Wdeclaration_after_statement succeded with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3111602696/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3111602696.dir/build.make CMakeFiles/cmTryCompileExec3111602696.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3111602696.dir/src.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -DC_FLAG_Wdeclaration_after_statement   -Wdeclaration-after-statement -o CMakeFiles/cmTryCompileExec3111602696.dir/src.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3111602696
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3111602696.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -DC_FLAG_Wdeclaration_after_statement    CMakeFiles/cmTryCompileExec3111602696.dir/src.c.o  -o cmTryCompileExec3111602696 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_FLAG_fstrict_aliasing succeded with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1302480197/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1302480197.dir/build.make CMakeFiles/cmTryCompileExec1302480197.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1302480197.dir/src.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -DC_FLAG_fstrict_aliasing   -fstrict-aliasing -o CMakeFiles/cmTryCompileExec1302480197.dir/src.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1302480197
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1302480197.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -DC_FLAG_fstrict_aliasing    CMakeFiles/cmTryCompileExec1302480197.dir/src.c.o  -o cmTryCompileExec1302480197 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAVE_LD_VERSION_SCRIPT succeded with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3242969101/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3242969101.dir/build.make CMakeFiles/cmTryCompileExec3242969101.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3242969101.dir/src.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DHAVE_LD_VERSION_SCRIPT -Wl,--version-script=/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/conftest.map   -o CMakeFiles/cmTryCompileExec3242969101.dir/src.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3242969101
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3242969101.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DHAVE_LD_VERSION_SCRIPT -Wl,--version-script=/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/conftest.map    CMakeFiles/cmTryCompileExec3242969101.dir/src.c.o  -o cmTryCompileExec3242969101 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void){return 0;}
+Determining if the include file assert.h exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2187314322/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2187314322.dir/build.make CMakeFiles/cmTryCompileExec2187314322.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2187314322.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec2187314322.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2187314322
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2187314322.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec2187314322.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2187314322 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4204725636/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4204725636.dir/build.make CMakeFiles/cmTryCompileExec4204725636.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4204725636.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec4204725636.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec4204725636
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4204725636.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec4204725636.dir/CheckIncludeFile.c.o  -o cmTryCompileExec4204725636 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3719717937/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3719717937.dir/build.make CMakeFiles/cmTryCompileExec3719717937.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3719717937.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec3719717937.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3719717937
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3719717937.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec3719717937.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3719717937 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2974225558/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2974225558.dir/build.make CMakeFiles/cmTryCompileExec2974225558.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2974225558.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec2974225558.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2974225558
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2974225558.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec2974225558.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2974225558 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file limits.h exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1666526288/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1666526288.dir/build.make CMakeFiles/cmTryCompileExec1666526288.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1666526288.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec1666526288.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1666526288
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1666526288.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec1666526288.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1666526288 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file malloc.h exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1012151543/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1012151543.dir/build.make CMakeFiles/cmTryCompileExec1012151543.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1012151543.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec1012151543.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1012151543
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1012151543.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec1012151543.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1012151543 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2619563467/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2619563467.dir/build.make CMakeFiles/cmTryCompileExec2619563467.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2619563467.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec2619563467.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2619563467
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2619563467.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec2619563467.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2619563467 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file search.h exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2760120457/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2760120457.dir/build.make CMakeFiles/cmTryCompileExec2760120457.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2760120457.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec2760120457.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2760120457
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2760120457.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec2760120457.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2760120457 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2057692215/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2057692215.dir/build.make CMakeFiles/cmTryCompileExec2057692215.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2057692215.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec2057692215.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2057692215
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2057692215.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec2057692215.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2057692215 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1761665461/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1761665461.dir/build.make CMakeFiles/cmTryCompileExec1761665461.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1761665461.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec1761665461.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1761665461
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1761665461.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec1761665461.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1761665461 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2560464100/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2560464100.dir/build.make CMakeFiles/cmTryCompileExec2560464100.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2560464100.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec2560464100.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2560464100
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2560464100.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec2560464100.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2560464100 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec608638220/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec608638220.dir/build.make CMakeFiles/cmTryCompileExec608638220.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec608638220.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec608638220.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec608638220
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec608638220.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec608638220.dir/CheckIncludeFile.c.o  -o cmTryCompileExec608638220 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec56808080/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec56808080.dir/build.make CMakeFiles/cmTryCompileExec56808080.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec56808080.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec56808080.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec56808080
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec56808080.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec56808080.dir/CheckIncludeFile.c.o  -o cmTryCompileExec56808080 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec844616277/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec844616277.dir/build.make CMakeFiles/cmTryCompileExec844616277.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec844616277.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec844616277.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec844616277
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec844616277.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec844616277.dir/CheckIncludeFile.c.o  -o cmTryCompileExec844616277 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test C_HAS_inline succeded with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3411087761/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3411087761.dir/build.make CMakeFiles/cmTryCompileExec3411087761.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3411087761.dir/src.c.o
+/usr/bin/cc  -Dinline=inline -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DC_HAS_inline   -o CMakeFiles/cmTryCompileExec3411087761.dir/src.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/src.c
+/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/src.c:5:22: warning: unused parameter ‘argc’ [-Wunused-parameter]
+         int main(int argc, char *argv[]) {return 0;}
+                      ^
+/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/src.c:5:34: warning: unused parameter ‘argv’ [-Wunused-parameter]
+         int main(int argc, char *argv[]) {return 0;}
+                                  ^
+Linking C executable cmTryCompileExec3411087761
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3411087761.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DC_HAS_inline    CMakeFiles/cmTryCompileExec3411087761.dir/src.c.o  -o cmTryCompileExec3411087761 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+        typedef int foo_t;
+        static inline foo_t static_foo() {return 0;}
+        foo_t foo(){return 0;}
+        int main(int argc, char *argv[]) {return 0;}
+Performing C SOURCE FILE Test TIME_WITH_SYS_TIME succeded with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec371475762/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec371475762.dir/build.make CMakeFiles/cmTryCompileExec371475762.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec371475762.dir/src.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DTIME_WITH_SYS_TIME   -o CMakeFiles/cmTryCompileExec371475762.dir/src.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec371475762
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec371475762.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DTIME_WITH_SYS_TIME    CMakeFiles/cmTryCompileExec371475762.dir/src.c.o  -o cmTryCompileExec371475762 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <sys/time.h>
+#include <time.h>
+int main(void){return 0;}
+Performing C SOURCE FILE Test TM_IN_SYS_TIME succeded with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2954154568/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2954154568.dir/build.make CMakeFiles/cmTryCompileExec2954154568.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2954154568.dir/src.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DTM_IN_SYS_TIME   -o CMakeFiles/cmTryCompileExec2954154568.dir/src.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2954154568
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2954154568.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DTM_IN_SYS_TIME    CMakeFiles/cmTryCompileExec2954154568.dir/src.c.o  -o cmTryCompileExec2954154568 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <sys/types.h>
+#include <time.h>
+
+int main(void){
+  struct tm tm;
+  int *p = &tm.tm_sec;
+  return !p;
+}
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3619632869/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3619632869.dir/build.make CMakeFiles/cmTryCompileExec3619632869.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3619632869.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec3619632869.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3619632869
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3619632869.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec3619632869.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3619632869 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining size of signed short passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4009828624/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4009828624.dir/build.make CMakeFiles/cmTryCompileExec4009828624.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4009828624.dir/SIZEOF_SIGNED_SHORT.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec4009828624.dir/SIZEOF_SIGNED_SHORT.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/SIZEOF_SIGNED_SHORT.c
+Linking C executable cmTryCompileExec4009828624
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4009828624.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec4009828624.dir/SIZEOF_SIGNED_SHORT.c.o  -o cmTryCompileExec4009828624 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2490988535/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2490988535.dir/build.make CMakeFiles/cmTryCompileExec2490988535.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2490988535.dir/SIZEOF_UNSIGNED_SHORT.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec2490988535.dir/SIZEOF_UNSIGNED_SHORT.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTryCompileExec2490988535
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2490988535.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec2490988535.dir/SIZEOF_UNSIGNED_SHORT.c.o  -o cmTryCompileExec2490988535 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining size of signed int passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2734536918/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2734536918.dir/build.make CMakeFiles/cmTryCompileExec2734536918.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2734536918.dir/SIZEOF_SIGNED_INT.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec2734536918.dir/SIZEOF_SIGNED_INT.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/SIZEOF_SIGNED_INT.c
+Linking C executable cmTryCompileExec2734536918
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2734536918.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec2734536918.dir/SIZEOF_SIGNED_INT.c.o  -o cmTryCompileExec2734536918 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned int passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2131941619/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2131941619.dir/build.make CMakeFiles/cmTryCompileExec2131941619.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2131941619.dir/SIZEOF_UNSIGNED_INT.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec2131941619.dir/SIZEOF_UNSIGNED_INT.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/SIZEOF_UNSIGNED_INT.c
+Linking C executable cmTryCompileExec2131941619
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2131941619.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec2131941619.dir/SIZEOF_UNSIGNED_INT.c.o  -o cmTryCompileExec2131941619 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining size of signed long passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1199926288/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1199926288.dir/build.make CMakeFiles/cmTryCompileExec1199926288.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1199926288.dir/SIZEOF_SIGNED_LONG.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec1199926288.dir/SIZEOF_SIGNED_LONG.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/SIZEOF_SIGNED_LONG.c
+Linking C executable cmTryCompileExec1199926288
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1199926288.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec1199926288.dir/SIZEOF_SIGNED_LONG.c.o  -o cmTryCompileExec1199926288 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned long passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1509165489/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1509165489.dir/build.make CMakeFiles/cmTryCompileExec1509165489.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1509165489.dir/SIZEOF_UNSIGNED_LONG.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec1509165489.dir/SIZEOF_UNSIGNED_LONG.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/SIZEOF_UNSIGNED_LONG.c
+Linking C executable cmTryCompileExec1509165489
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1509165489.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec1509165489.dir/SIZEOF_UNSIGNED_LONG.c.o  -o cmTryCompileExec1509165489 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining size of signed long long passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3367356897/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3367356897.dir/build.make CMakeFiles/cmTryCompileExec3367356897.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3367356897.dir/SIZEOF_SIGNED_LONG_LONG.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec3367356897.dir/SIZEOF_SIGNED_LONG_LONG.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/SIZEOF_SIGNED_LONG_LONG.c
+Linking C executable cmTryCompileExec3367356897
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3367356897.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec3367356897.dir/SIZEOF_SIGNED_LONG_LONG.c.o  -o cmTryCompileExec3367356897 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned long long passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2817761657/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2817761657.dir/build.make CMakeFiles/cmTryCompileExec2817761657.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2817761657.dir/SIZEOF_UNSIGNED_LONG_LONG.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec2817761657.dir/SIZEOF_UNSIGNED_LONG_LONG.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/SIZEOF_UNSIGNED_LONG_LONG.c
+Linking C executable cmTryCompileExec2817761657
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2817761657.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec2817761657.dir/SIZEOF_UNSIGNED_LONG_LONG.c.o  -o cmTryCompileExec2817761657 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned char * passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1555458728/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1555458728.dir/build.make CMakeFiles/cmTryCompileExec1555458728.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1555458728.dir/SIZEOF_UNSIGNED_CHAR_P.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec1555458728.dir/SIZEOF_UNSIGNED_CHAR_P.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/SIZEOF_UNSIGNED_CHAR_P.c
+Linking C executable cmTryCompileExec1555458728
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1555458728.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec1555458728.dir/SIZEOF_UNSIGNED_CHAR_P.c.o  -o cmTryCompileExec1555458728 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining size of size_t passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4255807932/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4255807932.dir/build.make CMakeFiles/cmTryCompileExec4255807932.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4255807932.dir/SIZEOF_SIZE_T.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec4255807932.dir/SIZEOF_SIZE_T.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/SIZEOF_SIZE_T.c
+Linking C executable cmTryCompileExec4255807932
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4255807932.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec4255807932.dir/SIZEOF_SIZE_T.c.o  -o cmTryCompileExec4255807932 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining size of ptrdiff_t passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2963190173/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2963190173.dir/build.make CMakeFiles/cmTryCompileExec2963190173.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2963190173.dir/SIZEOF_PTRDIFF_T.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec2963190173.dir/SIZEOF_PTRDIFF_T.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/SIZEOF_PTRDIFF_T.c
+Linking C executable cmTryCompileExec2963190173
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2963190173.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec2963190173.dir/SIZEOF_PTRDIFF_T.c.o  -o cmTryCompileExec2963190173 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the function floor exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1254643729/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1254643729.dir/build.make CMakeFiles/cmTryCompileExec1254643729.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1254643729.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=floor   -o CMakeFiles/cmTryCompileExec1254643729.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘floor’
+/usr/share/cmake-3.2/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec1254643729
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1254643729.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=floor    CMakeFiles/cmTryCompileExec1254643729.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1254643729 -rdynamic -lm 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pow exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3045405642/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3045405642.dir/build.make CMakeFiles/cmTryCompileExec3045405642.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3045405642.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=pow   -o CMakeFiles/cmTryCompileExec3045405642.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘pow’
+/usr/share/cmake-3.2/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec3045405642
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3045405642.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=pow    CMakeFiles/cmTryCompileExec3045405642.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3045405642 -rdynamic -lm 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the function sqrt exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2363767547/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2363767547.dir/build.make CMakeFiles/cmTryCompileExec2363767547.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2363767547.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=sqrt   -o CMakeFiles/cmTryCompileExec2363767547.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘sqrt’
+/usr/share/cmake-3.2/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec2363767547
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2363767547.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=sqrt    CMakeFiles/cmTryCompileExec2363767547.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2363767547 -rdynamic -lm 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the function isascii exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2939471933/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2939471933.dir/build.make CMakeFiles/cmTryCompileExec2939471933.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2939471933.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=isascii   -o CMakeFiles/cmTryCompileExec2939471933.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘isascii’
+/usr/share/cmake-3.2/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec2939471933
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2939471933.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=isascii    CMakeFiles/cmTryCompileExec2939471933.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2939471933 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the function memmove exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2895151305/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2895151305.dir/build.make CMakeFiles/cmTryCompileExec2895151305.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2895151305.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=memmove   -o CMakeFiles/cmTryCompileExec2895151305.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘memmove’
+/usr/share/cmake-3.2/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec2895151305
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2895151305.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=memmove    CMakeFiles/cmTryCompileExec2895151305.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2895151305 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the function memset exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec933541127/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec933541127.dir/build.make CMakeFiles/cmTryCompileExec933541127.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec933541127.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=memset   -o CMakeFiles/cmTryCompileExec933541127.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘memset’
+/usr/share/cmake-3.2/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec933541127
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec933541127.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=memset    CMakeFiles/cmTryCompileExec933541127.dir/CheckFunctionExists.c.o  -o cmTryCompileExec933541127 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the function mmap exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3428809690/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3428809690.dir/build.make CMakeFiles/cmTryCompileExec3428809690.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3428809690.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=mmap   -o CMakeFiles/cmTryCompileExec3428809690.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3428809690
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3428809690.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=mmap    CMakeFiles/cmTryCompileExec3428809690.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3428809690 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strcasecmp exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1788880338/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1788880338.dir/build.make CMakeFiles/cmTryCompileExec1788880338.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1788880338.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=strcasecmp   -o CMakeFiles/cmTryCompileExec1788880338.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘strcasecmp’
+/usr/share/cmake-3.2/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec1788880338
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1788880338.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=strcasecmp    CMakeFiles/cmTryCompileExec1788880338.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1788880338 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strchr exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3991610297/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3991610297.dir/build.make CMakeFiles/cmTryCompileExec3991610297.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3991610297.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=strchr   -o CMakeFiles/cmTryCompileExec3991610297.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘strchr’
+/usr/share/cmake-3.2/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec3991610297
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3991610297.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=strchr    CMakeFiles/cmTryCompileExec3991610297.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3991610297 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strrchr exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2504955313/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2504955313.dir/build.make CMakeFiles/cmTryCompileExec2504955313.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2504955313.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=strrchr   -o CMakeFiles/cmTryCompileExec2504955313.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘strrchr’
+/usr/share/cmake-3.2/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec2504955313
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2504955313.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=strrchr    CMakeFiles/cmTryCompileExec2504955313.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2504955313 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strstr exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3801841325/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3801841325.dir/build.make CMakeFiles/cmTryCompileExec3801841325.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3801841325.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=strstr   -o CMakeFiles/cmTryCompileExec3801841325.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘strstr’
+/usr/share/cmake-3.2/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec3801841325
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3801841325.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=strstr    CMakeFiles/cmTryCompileExec3801841325.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3801841325 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strtol exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1581726145/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1581726145.dir/build.make CMakeFiles/cmTryCompileExec1581726145.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1581726145.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=strtol   -o CMakeFiles/cmTryCompileExec1581726145.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1581726145
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1581726145.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=strtol    CMakeFiles/cmTryCompileExec1581726145.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1581726145 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strtol exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4224207675/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4224207675.dir/build.make CMakeFiles/cmTryCompileExec4224207675.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4224207675.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=strtol   -o CMakeFiles/cmTryCompileExec4224207675.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4224207675
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4224207675.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=strtol    CMakeFiles/cmTryCompileExec4224207675.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4224207675 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strtoull exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1136508177/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1136508177.dir/build.make CMakeFiles/cmTryCompileExec1136508177.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1136508177.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=strtoull   -o CMakeFiles/cmTryCompileExec1136508177.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1136508177
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1136508177.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=strtoull    CMakeFiles/cmTryCompileExec1136508177.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1136508177 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the function getopt exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2412699403/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2412699403.dir/build.make CMakeFiles/cmTryCompileExec2412699403.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2412699403.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=getopt   -o CMakeFiles/cmTryCompileExec2412699403.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2412699403
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2412699403.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=getopt    CMakeFiles/cmTryCompileExec2412699403.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2412699403 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the function lfind exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1219742003/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1219742003.dir/build.make CMakeFiles/cmTryCompileExec1219742003.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1219742003.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=lfind   -o CMakeFiles/cmTryCompileExec1219742003.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1219742003
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1219742003.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=lfind    CMakeFiles/cmTryCompileExec1219742003.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1219742003 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE_SNPRINTF succeded with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3710147453/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3710147453.dir/build.make CMakeFiles/cmTryCompileExec3710147453.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3710147453.dir/src.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DHAVE_SNPRINTF   -o CMakeFiles/cmTryCompileExec3710147453.dir/src.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3710147453
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3710147453.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DHAVE_SNPRINTF    CMakeFiles/cmTryCompileExec3710147453.dir/src.c.o  -o cmTryCompileExec3710147453 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <stdio.h>
+int main(void) {
+  char buf[10];
+  snprintf(buf, 10, "Test %d", 1);
+  return 0;
+}
+Determining size of unsigned short passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4238969059/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4238969059.dir/build.make CMakeFiles/cmTryCompileExec4238969059.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4238969059.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec4238969059.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTryCompileExec4238969059
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4238969059.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec4238969059.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTryCompileExec4238969059 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the function jbg_newlen exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1794349080/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1794349080.dir/build.make CMakeFiles/cmTryCompileExec1794349080.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1794349080.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=jbg_newlen   -o CMakeFiles/cmTryCompileExec1794349080.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1794349080
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1794349080.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=jbg_newlen    CMakeFiles/cmTryCompileExec1794349080.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1794349080 -rdynamic -ljbig 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the function lzma_auto_decoder exists in the /usr/lib/x86_64-linux-gnu/liblzma.so passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2864519726/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2864519726.dir/build.make CMakeFiles/cmTryCompileExec2864519726.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2864519726.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=lzma_auto_decoder   -o CMakeFiles/cmTryCompileExec2864519726.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2864519726
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2864519726.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=lzma_auto_decoder    CMakeFiles/cmTryCompileExec2864519726.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2864519726 -rdynamic -llzma 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the function lzma_easy_encoder exists in the /usr/lib/x86_64-linux-gnu/liblzma.so passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2670976435/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2670976435.dir/build.make CMakeFiles/cmTryCompileExec2670976435.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2670976435.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=lzma_easy_encoder   -o CMakeFiles/cmTryCompileExec2670976435.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2670976435
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2670976435.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=lzma_easy_encoder    CMakeFiles/cmTryCompileExec2670976435.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2670976435 -rdynamic -llzma 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the function lzma_lzma_preset exists in the /usr/lib/x86_64-linux-gnu/liblzma.so passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec872429090/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec872429090.dir/build.make CMakeFiles/cmTryCompileExec872429090.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec872429090.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=lzma_lzma_preset   -o CMakeFiles/cmTryCompileExec872429090.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec872429090
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec872429090.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=lzma_lzma_preset    CMakeFiles/cmTryCompileExec872429090.dir/CheckFunctionExists.c.o  -o cmTryCompileExec872429090 -rdynamic -llzma 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/3.2.2/CompilerIdCXX/a.out"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2683746148/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2683746148.dir/build.make CMakeFiles/cmTryCompileExec2683746148.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2683746148.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2683746148.dir/testCXXCompiler.cxx.o -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec2683746148
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2683746148.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec2683746148.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec2683746148 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1234025473/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1234025473.dir/build.make CMakeFiles/cmTryCompileExec1234025473.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1234025473.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1234025473.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec1234025473
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1234025473.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTryCompileExec1234025473.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1234025473 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.2.1-22ubuntu2' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 5.2.1 20151010 (Ubuntu 5.2.1-22ubuntu2) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1234025473' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccx7vZGZ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1234025473 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec1234025473.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec1234025473/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec1234025473.dir/build.make CMakeFiles/cmTryCompileExec1234025473.dir/build]
+  ignore line: [make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec1234025473.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1234025473.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec1234025473]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1234025473.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTryCompileExec1234025473.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1234025473 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.2.1-22ubuntu2' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 5.2.1 20151010 (Ubuntu 5.2.1-22ubuntu2) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1234025473' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccx7vZGZ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1234025473 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec1234025473.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccx7vZGZ.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec1234025473] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
+    arg [CMakeFiles/cmTryCompileExec1234025473.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5] ==> [/usr/lib/gcc/x86_64-linux-gnu/5]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/5;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2428965770/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2428965770.dir/build.make CMakeFiles/cmTryCompileExec2428965770.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2428965770.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTryCompileExec2428965770.dir/feature_tests.cxx.o -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec2428965770
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2428965770.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec2428965770.dir/feature_tests.cxx.o  -o cmTryCompileExec2428965770 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1262419758/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1262419758.dir/build.make CMakeFiles/cmTryCompileExec1262419758.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1262419758.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTryCompileExec1262419758.dir/feature_tests.cxx.o -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec1262419758
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1262419758.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec1262419758.dir/feature_tests.cxx.o  -o cmTryCompileExec1262419758 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1267703015/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1267703015.dir/build.make CMakeFiles/cmTryCompileExec1267703015.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1267703015.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTryCompileExec1267703015.dir/feature_tests.cxx.o -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec1267703015
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1267703015.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec1267703015.dir/feature_tests.cxx.o  -o cmTryCompileExec1267703015 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the include file GL/gl.h exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2109119849/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2109119849.dir/build.make CMakeFiles/cmTryCompileExec2109119849.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2109119849.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec2109119849.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2109119849
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2109119849.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec2109119849.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2109119849 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file GL/glu.h exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2391697474/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2391697474.dir/build.make CMakeFiles/cmTryCompileExec2391697474.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2391697474.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec2391697474.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2391697474
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2391697474.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec2391697474.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2391697474 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file GL/glut.h exists passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2643146634/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2643146634.dir/build.make CMakeFiles/cmTryCompileExec2643146634.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2643146634.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec2643146634.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2643146634
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2643146634.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec2643146634.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2643146634 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+

@@ -1,0 +1,78 @@
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <string>
+#include <sstream>
+
+int main()
+{
+
+	// Create a test file
+	std::ofstream test("./test.xyz");
+
+	if (!test.good()) return 0;
+	
+	double dx = 360 /100;
+	for (double i = -180; i <= 180; i += dx)
+	{	
+		for (double j = 90; i >= -90; i -= dx)
+		{	
+			test << i << " " << j << " " << 1.2 << std::endl;	
+		}
+	}	
+	test.close();
+
+	// Split the file
+	//std::ifstream file("../data/ETOPO1_ice_g_int.xyz");
+	std::ifstream file("./test.xyz");
+
+	const int num_div = 10;
+	const double degree_per_file = 360.0 / (double)num_div;
+
+	double longitude = -180;
+	double latitude = 90; 	
+	double next_degreeX = -180;
+	double next_degreeY = 90;
+
+	int countX = 0;
+	int countY = 0;
+
+	std::stringstream outName;
+	std::vector<std::ofstream> outVector(num_div);
+	std::string line;
+
+	while (file.good())
+	{
+		getline(file, line);
+		std::stringstream streamline(line);
+		streamline >> longitude;
+		streamline >> latitude;
+
+		if (longitude >= next_degreeX)
+		{
+			if (next_degreeX == -180) 
+			{
+				countX = -1;
+				countY++;
+			}
+
+			countX++;
+			outName.str("");
+			outName << "./splitted/etopo1_x" << countX+1 << "_y" << countY+1;
+			outName << "_R" << num_div << ".xyz";
+
+			next_degreeX += degree_per_file;	
+			if (next_degreeX > 180) 
+			{
+				next_degreeX = -180;
+				next_degreeY -= degree_per_file;
+			}
+
+			if (outVector[countX].good()) outVector[countX].close();
+			outVector[countX].open(outName.str());
+			if (!outVector[countX].good()) 
+				throw std::string("IMpossible to open file " + outName.str());
+		}
+		outVector[countX] << line;
+	}
+}

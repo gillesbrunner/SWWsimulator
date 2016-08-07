@@ -1,0 +1,326 @@
+Determining if the include file io.h exists failed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2130154916/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2130154916.dir/build.make CMakeFiles/cmTryCompileExec2130154916.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2130154916.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec2130154916.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:16: fatal error: io.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTryCompileExec2130154916.dir/build.make:57: recipe for target 'CMakeFiles/cmTryCompileExec2130154916.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTryCompileExec2130154916.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+Makefile:117: recipe for target 'cmTryCompileExec2130154916/fast' failed
+make: *** [cmTryCompileExec2130154916/fast] Error 2
+
+
+Determining size of INT8 failed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3406417809/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3406417809.dir/build.make CMakeFiles/cmTryCompileExec3406417809.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3406417809.dir/int8.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec3406417809.dir/int8.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/int8.c
+/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/int8.c:17:22: error: ‘INT8’ undeclared here (not in a function)
+ #define SIZE (sizeof(INT8))
+                      ^
+/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/int8.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+CMakeFiles/cmTryCompileExec3406417809.dir/build.make:57: recipe for target 'CMakeFiles/cmTryCompileExec3406417809.dir/int8.c.o' failed
+make[1]: *** [CMakeFiles/cmTryCompileExec3406417809.dir/int8.c.o] Error 1
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+Makefile:117: recipe for target 'cmTryCompileExec3406417809/fast' failed
+make: *** [cmTryCompileExec3406417809/fast] Error 2
+
+/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/int8.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(INT8))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of INT16 failed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1551197533/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1551197533.dir/build.make CMakeFiles/cmTryCompileExec1551197533.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1551197533.dir/int16.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec1551197533.dir/int16.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/int16.c
+/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/int16.c:17:22: error: ‘INT16’ undeclared here (not in a function)
+ #define SIZE (sizeof(INT16))
+                      ^
+/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/int16.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+CMakeFiles/cmTryCompileExec1551197533.dir/build.make:57: recipe for target 'CMakeFiles/cmTryCompileExec1551197533.dir/int16.c.o' failed
+make[1]: *** [CMakeFiles/cmTryCompileExec1551197533.dir/int16.c.o] Error 1
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+Makefile:117: recipe for target 'cmTryCompileExec1551197533/fast' failed
+make: *** [cmTryCompileExec1551197533/fast] Error 2
+
+/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/int16.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(INT16))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of INT32 failed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec433906575/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec433906575.dir/build.make CMakeFiles/cmTryCompileExec433906575.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec433906575.dir/int32.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec433906575.dir/int32.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/int32.c
+/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/int32.c:17:22: error: ‘INT32’ undeclared here (not in a function)
+ #define SIZE (sizeof(INT32))
+                      ^
+/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/int32.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+CMakeFiles/cmTryCompileExec433906575.dir/build.make:57: recipe for target 'CMakeFiles/cmTryCompileExec433906575.dir/int32.c.o' failed
+make[1]: *** [CMakeFiles/cmTryCompileExec433906575.dir/int32.c.o] Error 1
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+Makefile:117: recipe for target 'cmTryCompileExec433906575/fast' failed
+make: *** [cmTryCompileExec433906575/fast] Error 2
+
+/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CheckTypeSize/int32.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(INT32))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function setmode exists failed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1321223586/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1321223586.dir/build.make CMakeFiles/cmTryCompileExec1321223586.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1321223586.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=setmode   -o CMakeFiles/cmTryCompileExec1321223586.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1321223586
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1321223586.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing -DCHECK_FUNCTION_EXISTS=setmode    CMakeFiles/cmTryCompileExec1321223586.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1321223586 -rdynamic 
+CMakeFiles/cmTryCompileExec1321223586.dir/CheckFunctionExists.c.o: dans la fonction « main »:
+CheckFunctionExists.c:(.text+0x15): référence indéfinie vers « setmode »
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTryCompileExec1321223586.dir/build.make:88: recipe for target 'cmTryCompileExec1321223586' failed
+make[1]: *** [cmTryCompileExec1321223586] Error 1
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+Makefile:117: recipe for target 'cmTryCompileExec1321223586/fast' failed
+make: *** [cmTryCompileExec1321223586/fast] Error 2
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1731836759/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1731836759.dir/build.make CMakeFiles/cmTryCompileExec1731836759.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1731836759.dir/TestEndianess.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec1731836759.dir/TestEndianess.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec1731836759
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1731836759.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing     CMakeFiles/cmTryCompileExec1731836759.dir/TestEndianess.c.o  -o cmTryCompileExec1731836759 -rdynamic 
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the include file GLUT/glut.h exists failed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3809081258/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3809081258.dir/build.make CMakeFiles/cmTryCompileExec3809081258.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3809081258.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec3809081258.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:23: fatal error: GLUT/glut.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTryCompileExec3809081258.dir/build.make:57: recipe for target 'CMakeFiles/cmTryCompileExec3809081258.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTryCompileExec3809081258.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+Makefile:117: recipe for target 'cmTryCompileExec3809081258/fast' failed
+make: *** [cmTryCompileExec3809081258/fast] Error 2
+
+
+Determining if the include file OpenGL/gl.h exists failed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1349908158/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1349908158.dir/build.make CMakeFiles/cmTryCompileExec1349908158.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1349908158.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec1349908158.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:23: fatal error: OpenGL/gl.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTryCompileExec1349908158.dir/build.make:57: recipe for target 'CMakeFiles/cmTryCompileExec1349908158.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTryCompileExec1349908158.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+Makefile:117: recipe for target 'cmTryCompileExec1349908158/fast' failed
+make: *** [cmTryCompileExec1349908158/fast] Error 2
+
+
+Determining if the include file OpenGL/glu.h exists failed with the following output:
+Change Dir: /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2473288767/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2473288767.dir/build.make CMakeFiles/cmTryCompileExec2473288767.dir/build
+make[1]: Entering directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2473288767.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTryCompileExec2473288767.dir/CheckIncludeFile.c.o   -c /home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:24: fatal error: OpenGL/glu.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTryCompileExec2473288767.dir/build.make:57: recipe for target 'CMakeFiles/cmTryCompileExec2473288767.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTryCompileExec2473288767.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/gbrunner/Documents/Programmation/SWWsimulator/src/tiff-4.0.6/CMakeFiles/CMakeTmp'
+Makefile:117: recipe for target 'cmTryCompileExec2473288767/fast' failed
+make: *** [cmTryCompileExec2473288767/fast] Error 2
+
+
