@@ -11,7 +11,13 @@
 #include "included.h"
 #include <tiffio.h>
 
-typedef std::vector<std::pair<double,std::vector<std::pair<double,double>>>> VectorGrid;
+struct VectorGrid
+{
+	alglib::real_1d_array X;
+	alglib::real_1d_array Y;
+	alglib::real_1d_array H;
+};
+
 class Grid
 {
 private:
@@ -24,10 +30,15 @@ private:
 
 	double Zfactor;
 	double* _topography;
+	int* _colorMapRGB;
 
 	TIFF* tif;
 
+	inline int lonlatToXY(double lon, double cLon) { return (int)tan((cLon - lon) * M_PI / 180.0) * _earth_ray; }
+
+	//void ComputeCellsVolumes(VectorGrid& grid);
 	void interpolateGrid(VectorGrid& grid);
+
 public:
 	Grid(uint size, uint resolution);
 	Grid(std::string filename);
@@ -45,9 +56,14 @@ public:
 		_topography[i * _resolution + j] = val;
 	}
 
+	// Colors
+	inline float GetR(uint i, uint j) { return (float)(TIFFGetR(_colorMapRGB[i *_resolution + j]) / 255.0);}
+	inline float GetG(uint i, uint j) { return (float)(TIFFGetG(_colorMapRGB[i *_resolution + j]) / 255.0);}
+	inline float GetB(uint i, uint j) { return (float)(TIFFGetB(_colorMapRGB[i *_resolution + j]) / 255.0);}
+
 	// OSG
 	void loadTopography(double latitude, double longitude);
-	void loadColorMap();
+	void loadColorMap(double latitude, double longitude);
 	void render(osg::Group* root);
 };
 

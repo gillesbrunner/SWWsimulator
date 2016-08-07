@@ -67,6 +67,9 @@
 #include "panel_ids.h"
 #include "exprtk/exprtk.hpp"
 
+#include "../lib/alglib/include/stdafx.h"
+#include "../lib/alglib/include/interpolation.h"
+
 #include "Grid.h"
 #include "OSGviewer.h"
 #include "MyWindow.h"

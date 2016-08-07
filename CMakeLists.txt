@@ -139,7 +139,12 @@ endmacro()
 set(libtiff_INCLUDE_DIR /usr/local/include)
 set(libtiff_LIBRARY /usr/local/lib/libtiff.so)
 
+set(libalglib_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/lib/alglib/include)
+set(libalglib_LIBRARY ${CMAKE_CURRENT_SOURCE_DIR}/lib/alglib/build/libalglib.so)
+
 config_project( ${EXEC} libtiff)
+config_project( ${EXEC} libalglib)
+
 config_project( ${EXEC} OSG )
 config_project( ${EXEC} OSGGA )
 config_project( ${EXEC} OSGDB )

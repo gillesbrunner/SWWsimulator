@@ -8,7 +8,7 @@
 #include "Grid.h"
 
 Grid::Grid(uint SIZE, uint RESOLUTION)
-: _size(SIZE), _resolution(RESOLUTION), Zfactor(10)
+: _size(SIZE), _resolution(RESOLUTION), Zfactor(0.1)
 {
 	_resolution = std::max(2, (int)_resolution);
 
@@ -18,36 +18,73 @@ Grid::Grid(uint SIZE, uint RESOLUTION)
 	_topography = new double[_resolution * _resolution];
 	memset(_topography, 0, _resolution * _resolution * sizeof(double));
 
-	int x = 0, y = 0;
-	for (size_t i = 0; i < _resolution; i++)
-	{
-			x = (i + 0.5) * _dx;
-			for (size_t j = 0; j < _resolution; j++)
-			{
-				y = (j + 0.5) * _dx;
-				Set(i,j, Zfactor * sin(x / 10.0) * cos(y / 10.0));
-			}
-	}
+	_colorMapRGB = new int[_resolution * _resolution];
+	memset(_colorMapRGB, 0, _resolution * _resolution * sizeof(int));
+
 }
 
 Grid::~Grid()
 {
 	delete[] _topography;
+	delete[] _colorMapRGB;
 }
 
-void Grid::interpolateGrid(VectorGrid& grid, double centerX, double centerY)
+/*void Grid::ComputeCellsVolumes(VectorGrid& grid)
 {
-	int minX = tan((centerX - grid[0].first) * M_PI / 180.0) * _earth_ray;
-	int maxX = tan((centerX + grid.back().first) * M_PI / 180.0) * _earth_ray;
+	int GSize = grid.size()-1;
+	for (size_t i = 1; i < grid.size() - 1; i++)
+	{
+		grid[i].second[0].second = (1.0 / 9.0 * grid[i-1].second[0].second +  4.0 / 9.0 * grid[i-1].second[0].second + 1.0 / 9.0 * grid[i-1].second[1].second
+						   	      + 4.0 / 9.0 * grid[i  ].second[0].second + 16.0 / 9.0 * grid[i  ].second[0].second + 4.0 / 9.0 * grid[i  ].second[1].second
+								  + 1.0 / 9.0 * grid[i+1].second[0].second +  4.0 / 9.0 * grid[i+1].second[0].second + 1.0 / 9.0 * grid[i+1].second[1].second) / 4;
 
-	int minY = tan((centerY - grid[0].second[0]) * M_PI / 180.0) * _earth_ray;
-	int maxY = tan((centerY + grid[0].second.back()) * M_PI / 180.0) * _earth_ray;
+		for (size_t j = 1; j < grid[i].second.size() - 1; j++)
+		{
+			grid[i].second[j].second = (1.0 / 9.0 * grid[i-1].second[j-1].second +  4.0 / 9.0 * grid[i-1].second[j].second + 1.0 / 9.0 * grid[i-1].second[j+1].second
+					           	   	  + 4.0 / 9.0 * grid[i  ].second[j-1].second + 16.0 / 9.0 * grid[i  ].second[j].second + 4.0 / 9.0 * grid[i  ].second[j+1].second
+									  + 1.0 / 9.0 * grid[i+1].second[j-1].second +  4.0 / 9.0 * grid[i+1].second[j].second + 1.0 / 9.0 * grid[i+1].second[j+1].second) / 4;
+		}
+
+		grid[i].second[GSize].second = (1.0 / 9.0 * grid[i-1].second[GSize-1].second +  4.0 / 9.0 * grid[i-1].second[GSize].second + 1.0 / 9.0 * grid[i-1].second[GSize].second
+							   	   	  + 4.0 / 9.0 * grid[i  ].second[GSize-1].second + 16.0 / 9.0 * grid[i  ].second[GSize].second + 4.0 / 9.0 * grid[i  ].second[GSize].second
+									  + 1.0 / 9.0 * grid[i+1].second[GSize-1].second +  4.0 / 9.0 * grid[i+1].second[GSize].second + 1.0 / 9.0 * grid[i+1].second[GSize].second) / 4;
+	}
+
+	for (size_t j = 1; j < grid[0].second.size() - 1; j++)
+	{
+		grid[0].second[j].second = (1.0 / 9.0 * grid[0].second[j-1].second +  4.0 / 9.0 * grid[0].second[j].second + 1.0 / 9.0 * grid[0].second[j+1].second
+						   	   	  + 4.0 / 9.0 * grid[0].second[j-1].second + 16.0 / 9.0 * grid[0].second[j].second + 4.0 / 9.0 * grid[0].second[j+1].second
+								  + 1.0 / 9.0 * grid[1].second[j-1].second +  4.0 / 9.0 * grid[1].second[j].second + 1.0 / 9.0 * grid[1].second[j+1].second) / 4;
+	}
+
+
+	for (size_t j = 1; j < grid[GSize].second.size() - 1; j++)
+	{
+		grid[GSize].second[j].second = (1.0 / 9.0 * grid[GSize-1].second[j-1].second +  4.0 / 9.0 * grid[GSize-1].second[j].second + 1.0 / 9.0 * grid[GSize].second[j+1].second
+						       	      + 4.0 / 9.0 * grid[GSize].second[j-1].second + 16.0 / 9.0 * grid[GSize].second[j].second + 4.0 / 9.0 * grid[GSize-1].second[j+1].second
+									  + 1.0 / 9.0 * grid[GSize].second[j-1].second +  4.0 / 9.0 * grid[GSize].second[j].second + 1.0 / 9.0 * grid[GSize].second[j+1].second) / 4;
+	}
+}*/
+
+void Grid::interpolateGrid(VectorGrid& grid)
+{
+	double angledx = (grid.X[grid.X.length()-1] - grid.X[0]) / (double)(_resolution-1);
+	double angledy = (grid.Y[grid.Y.length()-1] - grid.Y[0]) / (double)(_resolution-1);
+
+	alglib::spline2dinterpolant s;
+
+	// build spline
+	alglib::spline2dbuildbicubicv(grid.X, grid.X.length(), grid.Y, grid.Y.length(), grid.H, 1, s);
 
 	for (size_t i = 0; i < _resolution; i++)
 	{
 		for (size_t j = 0; j < _resolution; j++)
 		{
-			int
+		    // Interpolate the height
+			Set(i, j, alglib::spline2dcalc(s, grid.X[0] + i * angledx , grid.Y[0] + j * angledy));
+
+			assert(grid.X[0] + i * angledx <= grid.X[grid.X.length()-1]);
+			assert(grid.Y[0] + j * angledy <= grid.Y[grid.Y.length()-1]);
 		}
 	}
 }
@@ -61,9 +98,9 @@ void Grid::loadTopography(double latitude, double longitude)
 	int minfileY = floor((-latitude + 90 - angle) / (180 / (double)(_num_files))) + 1;
 	int maxfileY = ceil((-latitude + 90 + angle) / (180 / (double)(_num_files))) + 1;
 
-	std::cout << angle << std::endl;
-	std::cout << minfileX << "  " << maxfileX << std::endl;
-	std::cout << minfileY << "  " << maxfileY << std::endl;
+	std::cout << "Angle: " << angle << std::endl;
+	std::cout << "minX: " << minfileX << "  maxX: " << maxfileX << std::endl;
+	std::cout << "minY: " << minfileY << "  maxY: " << maxfileY << std::endl;
 
 	std::string line;
 	std::stringstream streamline("");
@@ -102,7 +139,7 @@ void Grid::loadTopography(double latitude, double longitude)
 	}
 
 	// Reconstruct the sorted grid
-	VectorGrid grid;
+	std::vector<std::pair<double,std::vector<std::pair<double,double>>>> grid;
 
 	for (auto it = loadedtopo.begin(); it != loadedtopo.end(); it++)
 	{
@@ -116,27 +153,146 @@ void Grid::loadTopography(double latitude, double longitude)
 	}
 
 	//sort the new grid
-	for (int i = 0; i < grid.size(); i++)
+	for (size_t i = 0; i < grid.size(); i++)
 	{
 		std::sort(grid[i].second.begin(), grid[i].second.end());
 	}
 	std::sort(grid.begin(), grid.end());
 
+
+	// Construct the Spline structure to be used for interpolation
+	VectorGrid SplineGrid;
+	size_t n = grid.size();
+	size_t m = grid[0].second.size();
+
+	SplineGrid.X.setlength(n);
+	SplineGrid.Y.setlength(m);
+	SplineGrid.H.setlength(n*m);
+
+	for (size_t i = 0; i < n; i++)
+	{
+		SplineGrid.X[i] = grid[i].first;
+		for (size_t j = 0; j < m; j++)
+		{
+			if (i == 0) SplineGrid.Y[j] =  grid[0].second[j].first;
+			else assert(SplineGrid.Y[j] == grid[0].second[j].first);
+			SplineGrid.H[i + j * n] = grid[i].second[j].second;
+		}
+	}
+
+	interpolateGrid(SplineGrid);
+	loadColorMap(latitude, longitude);
 }
 
-void Grid::loadColorMap()
+void Grid::loadColorMap(double latitude, double longitude)
 {
 
-	tif = TIFFOpen("foo.tif", "r");
+	std::string fileName = "../data/color_etopo1_ice_full.tif";
+	tif = TIFFOpen(fileName.c_str(), "r");
 
+	if (tif)
+	{
+		uint32 w, h;
+		size_t npixels;
+		uint32* raster;
 
-	TIFFClose(tif);
+		TIFFGetField(tif, TIFFTAG_IMAGEWIDTH, &w);
+		TIFFGetField(tif, TIFFTAG_IMAGELENGTH, &h);
+		npixels = w * h;
+		raster = (uint32*) _TIFFmalloc(npixels * sizeof (uint32));
+		if (raster != NULL)
+		{
+		    if (TIFFReadRGBAImage(tif, w, h, raster, 0))
+		    {
+				const double pixeldx = w / 360.0;
+				const double pixeldy = h / 180.0;
+
+		    	double angle = (_size / 2.0) / (double)_earth_ray * 180.0 / M_PI;
+		    	double lonS = longitude + 180 - angle;
+		    	double lonE = longitude + 180 + angle;
+		    	double latS = -latitude + 90 - angle;
+		    	double latE = -latitude + 90 + angle;
+
+		    	uint minX = floor(lonS * pixeldx);
+		    	uint maxX = ceil(lonE * pixeldx);
+		    	uint minY = floor(latS * pixeldy);
+		    	uint maxY = ceil(latE * pixeldy);
+
+		    	assert(maxX < w);
+		    	assert(maxY < h);
+
+		    	uint n = maxX-minX+1;
+		    	uint m = maxY-minY+1;
+
+		    	double dx = (lonE - lonS) / (double)(n-1);
+		    	double dy = (latE - latS) / (double)(m-1);
+
+		    	VectorGrid colorGrid;
+		    	colorGrid.X.setlength(n);
+		    	colorGrid.Y.setlength(m);
+		    	colorGrid.H.setlength(3 * n * m);
+
+		    	int val = 0;
+		    	std::cout << "Npixels " << npixels << std::endl;
+		    	std::cout << "w " << w << " h " << h << std::endl;
+		    	std::cout << "minX " << minX << " maxX " << maxX << std::endl;
+		    	std::cout << "minY " << minY << " maxY " << maxY << std::endl;
+		    	std::cout << "n " << n << " m " << m << std::endl;
+
+		    	// Create the RGB grid to interpolate the colors
+		    	for (uint i = 0; i < n; i++)
+		    	{
+		    		colorGrid.X[i] = lonS +  i * dx;
+		    		for (uint j = 0; j < m; j++)
+		    		{
+		    			if (i == 0) colorGrid.Y[j] = latS +  j * dy;
+		    			assert(i * w + j < npixels);
+		    			val = raster[(i + minX) * w + (h - j - minY)];
+
+		    			colorGrid.H[i * 3     + j * 3 * n] = TIFFGetR(val);
+		    			colorGrid.H[i * 3 + 1 + j * 3 * n] = TIFFGetG(val);
+		    			colorGrid.H[i * 3 + 2 + j * 3 * n] = TIFFGetB(val);
+		    		}
+		    	}
+
+		    	// Interpolate the color
+		    	alglib::spline2dinterpolant c;
+
+		    	// build spline
+		    	alglib::spline2dbuildbicubicv(colorGrid.X, colorGrid.X.length(), colorGrid.Y, colorGrid.Y.length(), colorGrid.H, 3, c);
+
+		    	dx = (colorGrid.X[colorGrid.X.length()-1] - colorGrid.X[0]) / (double)(_resolution-1);
+		    	dy = (colorGrid.Y[colorGrid.Y.length()-1] - colorGrid.Y[0]) / (double)(_resolution-1);
+
+		    	alglib::real_1d_array buffer;
+		    	for (size_t i = 0; i < _resolution; i++)
+		    	{
+		    		for (size_t j = 0; j < _resolution; j++)
+		    		{
+		    			// interpolate the color
+		    		    alglib::spline2dcalcv(c, colorGrid.X[0] + i * dx , colorGrid.Y[0] + j * dy, buffer);
+		    		    _colorMapRGB[i * _resolution + j] = (int)(((char)buffer[2] << 16) + ((char)buffer[1] << 8) + (int)buffer[0]);
+
+		    			assert(colorGrid.X[0] + i * dx <= colorGrid.X[colorGrid.X.length()-1]);
+		    			assert(colorGrid.Y[0] + j * dy <= colorGrid.Y[colorGrid.Y.length()-1]);
+		    		}
+		    	}
+		    }
+		    _TIFFfree(raster);
+		}
+		TIFFClose(tif);
+	}
 }
+
 // 100km = 1 on (x,y)
 //   1km = 1 on z
 void Grid::render(osg::Group* root)
 {
-	loadTopography(46.519196, 6.580698);
+	//loadTopography(28.861680, -15.286634);	// Tenerif
+	//loadTopography(25.881838, -80.805156);	// Miami
+	//loadTopography(46.47246, 6.580616);	//Lausanne
+	//loadTopography(-33.959678, 18.670304); // Cape Town
+	loadTopography(48.248530, -3.840661); // Pleyben 400kms
 
 	osg::Geode* geode = new osg::Geode();
 	osg::Geometry* 	geo = new osg::Geometry();
@@ -150,7 +306,7 @@ void Grid::render(osg::Group* root)
 	{
 		for (size_t j = 0; j < _resolution; j++)
 		{
-			GridVertices->push_back( osg::Vec3( (i + 0.5) * _dx, (j + 0.5) * _dx, Get(i,j) ) );
+			GridVertices->push_back( osg::Vec3( (i + 0.5) * _dx, (j + 0.5) * _dx, Zfactor * Get(i,j) ) );
 			//colors->push_back(osg::Vec4(1.0f, 0.89f, 0.77f, 1.0f) );
 		}
 	}
@@ -162,6 +318,8 @@ void Grid::render(osg::Group* root)
 	{
 		for (size_t j = 0; j < _resolution; j++)
 		{
+			colors->push_back(osg::Vec4(GetR(i,j), GetG(i,j), GetB(i,j), 1.0f) );
+
 			if (i > 0 && j > 0)
 			{
 				osg::DrawElementsUInt* face =
@@ -170,7 +328,6 @@ void Grid::render(osg::Group* root)
 				face->push_back(    i * _resolution + j-1);
 				face->push_back(    i * _resolution + j  );
 				geo->addPrimitiveSet(face);
-				colors->push_back(osg::Vec4(1.0f, 0.89f, 0.77f, 1.0f) );
 
 
 				osg::DrawElementsUInt* faceTwo =
@@ -179,13 +336,12 @@ void Grid::render(osg::Group* root)
 				faceTwo->push_back((i-1) * _resolution + j  );
 				faceTwo->push_back(    i * _resolution + j  );
 				geo->addPrimitiveSet(faceTwo);
-				colors->push_back(osg::Vec4(1.0f, 0.75f, 0.65f, 1.0f) );
 			}
 		}
 	}
 
 	geo->setColorArray(colors);
-	geo->setColorBinding(osg::Geometry::BIND_PER_PRIMITIVE_SET);
+	geo->setColorBinding(osg::Geometry::BIND_PER_VERTEX);
 
 	// Declare and initialize a transform node.
 	osg::PositionAttitudeTransform* gridTransform =

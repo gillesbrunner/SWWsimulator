@@ -145,7 +145,7 @@ void MyWindow::OnLoadDataClick( wxCommandEvent& event )
 	if (simGrid) delete simGrid;
 
 	try {
-		simGrid = new Grid(100, 50);
+		simGrid = new Grid(450, 200);
 		simGrid->render(_OSGview->root);
 		_OSGview->GetViewer()->setSceneData(_OSGview->root);
 	}
