@@ -8,7 +8,7 @@
 #include "Grid.h"
 
 Grid::Grid(uint SIZE, uint RESOLUTION)
-: _size(SIZE), _resolution(RESOLUTION), Zfactor(0.1)
+: _size(SIZE), _resolution(RESOLUTION), Zfactor(0.05)
 {
 	_resolution = std::max(2, (int)_resolution);
 
@@ -76,6 +76,8 @@ void Grid::interpolateGrid(VectorGrid& grid)
 	// build spline
 	alglib::spline2dbuildbicubicv(grid.X, grid.X.length(), grid.Y, grid.Y.length(), grid.H, 1, s);
 
+	double minH = DBL_MAX;
+	double maxH = DBL_MIN;
 	for (size_t i = 0; i < _resolution; i++)
 	{
 		for (size_t j = 0; j < _resolution; j++)
@@ -83,10 +85,16 @@ void Grid::interpolateGrid(VectorGrid& grid)
 		    // Interpolate the height
 			Set(i, j, alglib::spline2dcalc(s, grid.X[0] + i * angledx , grid.Y[0] + j * angledy));
 
+			if (minH > Get(i,j)) minH = Get(i,j);
+			if (maxH < Get(i,j)) maxH = Get(i,j);
+
 			assert(grid.X[0] + i * angledx <= grid.X[grid.X.length()-1]);
 			assert(grid.Y[0] + j * angledy <= grid.Y[grid.Y.length()-1]);
 		}
 	}
+
+	Zfactor = 200 / (maxH-minH);
+	std::cout << "Zfactor " << Zfactor << std::endl;
 }
 
 void Grid::loadTopography(double latitude, double longitude)
@@ -246,12 +254,11 @@ void Grid::loadColorMap(double latitude, double longitude)
 		    		for (uint j = 0; j < m; j++)
 		    		{
 		    			if (i == 0) colorGrid.Y[j] = latS +  j * dy;
-		    			assert(i * w + j < npixels);
-		    			val = raster[(i + minX) * w + (h - j - minY)];
+		    			val = raster[(i + minX) + (h - j - minY) * w]; // Starts at low-left corner
 
-		    			colorGrid.H[i * 3     + j * 3 * n] = TIFFGetR(val);
-		    			colorGrid.H[i * 3 + 1 + j * 3 * n] = TIFFGetG(val);
-		    			colorGrid.H[i * 3 + 2 + j * 3 * n] = TIFFGetB(val);
+		    			colorGrid.H[i * 3     + (m-1 - j) * 3 * n] = TIFFGetR(val);
+		    			colorGrid.H[i * 3 + 1 + (m-1 - j) * 3 * n] = TIFFGetG(val);
+		    			colorGrid.H[i * 3 + 2 + (m-1 - j) * 3 * n] = TIFFGetB(val);
 		    		}
 		    	}
 
@@ -285,14 +292,15 @@ void Grid::loadColorMap(double latitude, double longitude)
 }
 
 // 100km = 1 on (x,y)
-//   1km = 1 on z
 void Grid::render(osg::Group* root)
 {
+	//loadTopography(17.827623, 145.132992);	// Mariane Trench
 	//loadTopography(28.861680, -15.286634);	// Tenerif
-	//loadTopography(25.881838, -80.805156);	// Miami
-	//loadTopography(46.47246, 6.580616);	//Lausanne
-	//loadTopography(-33.959678, 18.670304); // Cape Town
-	loadTopography(48.248530, -3.840661); // Pleyben 400kms
+	loadTopography(25.881838, -80.805156);	// Miami
+	//loadTopography(46.47246, 6.580616);		// Lausanne 150kms
+	//loadTopography(-33.959678, 18.670304); 	// Cape Town
+	//loadTopography(64.887146, -18.430727);	// Islande
+	//loadTopography(39.356189, 14.083115);		// Sicile
 
 	osg::Geode* geode = new osg::Geode();
 	osg::Geometry* 	geo = new osg::Geometry();
