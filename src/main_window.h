@@ -26,6 +26,7 @@
 #include <wx/button.h>
 #include <wx/panel.h>
 #include <wx/gauge.h>
+#include <wx/combobox.h>
 #include <wx/frame.h>
 
 ///////////////////////////////////////////////////////////////////////////
@@ -93,6 +94,12 @@ class MainWindow : public wxFrame
 		wxPanel* pnlVisu;
 		wxStaticBoxSizer* staticsizerManagment;
 		wxButton* btnload;
+		wxStaticText* lblCities;
+		wxComboBox* cbTowns;
+		wxStaticText* lblLatitude;
+		wxTextCtrl* txtLatitude;
+		wxStaticText* lblLongitude;
+		wxTextCtrl* txtLongitude;
 		
 		// Virtual event handlers, overide them in your derived class
 		virtual void OnExit( wxCommandEvent& event ) { event.Skip(); }
@@ -108,7 +115,7 @@ class MainWindow : public wxFrame
 	
 	public:
 		
-		MainWindow( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("Shallow Water Wave Simulator"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( 1080,901 ), long style = wxDEFAULT_FRAME_STYLE|wxMAXIMIZE|wxTAB_TRAVERSAL );
+		MainWindow( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("Shallow Water Wave Simulator"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( 1210,901 ), long style = wxDEFAULT_FRAME_STYLE|wxMAXIMIZE|wxTAB_TRAVERSAL );
 		~MainWindow();
 	
 };

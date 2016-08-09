@@ -44,8 +44,8 @@ void VisuPanel::CreateCanvas()
 	attributes[5] = 8;
 	attributes[6] = 0;
 
-	int width  = 1920;
-	int height = 1200;
+	int width  = wxSystemSettings::GetMetric ( wxSYS_SCREEN_X ) ;
+	int height = wxSystemSettings::GetMetric ( wxSYS_SCREEN_Y );
 
 	OSGCanvas *canvas = new OSGCanvas(this, wxID_ANY, wxDefaultPosition,
 	wxSize(width, height), wxSUNKEN_BORDER, wxT("osgviewerWX"), attributes);

@@ -352,15 +352,41 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	
 	staticsizerManagment = new wxStaticBoxSizer( new wxStaticBox( pnlVisu, wxID_ANY, wxT("Solution Visualisation") ), wxVERTICAL );
 	
-	btnload = new wxButton( pnlVisu, wxID_ANY, wxT("Load Data"), wxDefaultPosition, wxDefaultSize, 0 );
-	staticsizerManagment->Add( btnload, 0, wxALL, 5 );
+	wxBoxSizer* toolsSizer;
+	toolsSizer = new wxBoxSizer( wxHORIZONTAL );
 	
-	mainSizerVisu->Add( staticsizerManagment, 1, wxEXPAND, 5 );
+	btnload = new wxButton( pnlVisu, wxID_ANY, wxT("Load Data"), wxDefaultPosition, wxSize( 150,-1 ), 0 );
+	toolsSizer->Add( btnload, 0, wxALIGN_CENTER|wxALL, 5 );
+	
+	lblCities = new wxStaticText( pnlVisu, wxID_ANY, wxT("City:"), wxDefaultPosition, wxSize( 70,-1 ), wxALIGN_RIGHT );
+	lblCities->Wrap( -1 );
+	toolsSizer->Add( lblCities, 0, wxALIGN_CENTER|wxALL, 5 );
+	
+	cbTowns = new wxComboBox( pnlVisu, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( 200,-1 ), 0, NULL, 0 ); 
+	toolsSizer->Add( cbTowns, 0, wxALIGN_CENTER|wxALL, 5 );
+	
+	lblLatitude = new wxStaticText( pnlVisu, wxID_ANY, wxT("Latitude:"), wxDefaultPosition, wxSize( 100,-1 ), wxALIGN_RIGHT );
+	lblLatitude->Wrap( -1 );
+	toolsSizer->Add( lblLatitude, 0, wxALIGN_CENTER|wxALL, 5 );
+	
+	txtLatitude = new wxTextCtrl( pnlVisu, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( 200,-1 ), 0 );
+	toolsSizer->Add( txtLatitude, 0, wxALIGN_CENTER|wxALL, 5 );
+	
+	lblLongitude = new wxStaticText( pnlVisu, wxID_ANY, wxT("Longitude:"), wxDefaultPosition, wxSize( 100,-1 ), wxALIGN_RIGHT );
+	lblLongitude->Wrap( -1 );
+	toolsSizer->Add( lblLongitude, 0, wxALIGN_CENTER|wxALL, 5 );
+	
+	txtLongitude = new wxTextCtrl( pnlVisu, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( 200,-1 ), 0 );
+	toolsSizer->Add( txtLongitude, 0, wxALIGN_CENTER|wxALL, 5 );
+	
+	staticsizerManagment->Add( toolsSizer, 1, wxALIGN_LEFT|wxEXPAND, 5 );
+	
+	mainSizerVisu->Add( staticsizerManagment, 1, wxALL|wxEXPAND, 5 );
 	
 	pnlVisu->SetSizer( mainSizerVisu );
 	pnlVisu->Layout();
 	mainSizerVisu->Fit( pnlVisu );
-	mainSizer->Add( pnlVisu, 0, wxALIGN_TOP|wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
+	mainSizer->Add( pnlVisu, 0, wxALL|wxEXPAND, 5 );
 	
 	this->SetSizer( mainSizer );
 	this->Layout();

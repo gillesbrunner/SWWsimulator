@@ -28,6 +28,7 @@
 #include "wx/colordlg.h"
 #include "wx/wfstream.h"
 #include <wx/app.h>
+#include <wx/settings.h>
 
 // Open Scene Graph
 #include "wx/defs.h"
