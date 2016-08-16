@@ -142,10 +142,39 @@ void MyWindow::OnGenerateInitialization( wxCommandEvent& event )
 
 void MyWindow::OnLoadDataClick( wxCommandEvent& event )
 {
-	if (simGrid) delete simGrid;
+	std::stringstream str;
+	double lon = DBL_MIN, lat = DBL_MIN;
+	int size = 0, res = 0;
 
 	try {
-		simGrid = new Grid(1500, 500);
+
+		// Test the input variables
+		str << txtLatitude->GetLineText(0).ToAscii();
+		str >> lat;
+		if (str.fail() || lat < -90 || lat > 90) throw std::string("Invalid parameter latitude:" + str.str());
+
+		str.clear();
+		str << txtLongitude->GetLineText(0).ToAscii();
+		str >> lon;
+		if (str.fail() || lon < -180 || lon > 180) throw std::string("Invalid parameter longitude:" + str.str());
+
+		str.clear();
+		str << txtDomain->GetLineText(0).ToAscii();
+		str >> size;
+		if (str.fail() || size < 10 || size > 10000) throw std::string("Invalid parameter domain size:" + str.str());
+
+		str.clear();
+		str << txtRes->GetLineText(0).ToAscii();
+		str >> res;
+		if (str.fail() || res < 5) throw std::string("Invalid parameter resolution:" + str.str());
+
+		// Create the Grid
+		if (simGrid) delete simGrid;
+
+		simGrid = new Grid(size, res);
+		simGrid->loadTopography(lat, lon);
+		simGrid->ComputeCellsVolumes();
+
 		simGrid->render(_OSGview->root);
 		_OSGview->GetViewer()->setSceneData(_OSGview->root);
 	}
@@ -155,8 +184,38 @@ void MyWindow::OnLoadDataClick( wxCommandEvent& event )
 		//wxMessageDialog(this, wxString(error),
 		//		wxMessageBoxCaptionStr, wxICON_ERROR|wxOK|wxCENTER);
 	}
-
 }
+
+void MyWindow::OnSelectComboBox( wxCommandEvent& event )
+{
+	std::stringstream strLat, strLon;
+	switch (cbTowns->GetSelection())
+	{
+	case 0: strLat << std::setprecision(10) <<-33.878955; strLon << std::setprecision(10) <<  18.450950; break;
+	case 1: strLat << std::setprecision(10) << 64.887146; strLon << std::setprecision(10) << -18.430727; break;
+	case 2: strLat << std::setprecision(10) << 17.827623; strLon << std::setprecision(10) << 145.132992; break;
+	case 3: strLat << std::setprecision(10) << 25.881838; strLon << std::setprecision(10) << -80.805156; break;
+	case 4: strLat << std::setprecision(10) << 39.356189; strLon << std::setprecision(10) <<  14.083115; break;
+	case 5: strLat << std::setprecision(10) << 28.861680; strLon << std::setprecision(10) << -15.286634; break;
+	}
+
+	txtLongitude->SetValue(strLon.str());
+	txtLatitude->SetValue(strLat.str());
+}
+
+void MyWindow::OnWritingText( wxCommandEvent& event )
+{
+	if (cbTowns->GetStringSelection().empty())
+	{
+		cbTowns->SetString(0, "Cape Town");
+		cbTowns->SetString(1, "Islande");
+		cbTowns->SetString(2, "Mariane Trench");
+		cbTowns->SetString(3, "Miami");
+		cbTowns->SetString(4, "Sicily");
+		cbTowns->SetString(5, "Tenerif");
+	}
+}
+
 // ===================================================================
 void MyWindow::InitExpression(std::string expression_string)
 {

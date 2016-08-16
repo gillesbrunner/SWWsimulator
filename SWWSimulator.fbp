@@ -497,7 +497,7 @@
                                                     <property name="validator_style">wxFILTER_NONE</property>
                                                     <property name="validator_type">wxDefaultValidator</property>
                                                     <property name="validator_variable"></property>
-                                                    <property name="value">100</property>
+                                                    <property name="value">1500</property>
                                                     <property name="window_extra_style"></property>
                                                     <property name="window_name"></property>
                                                     <property name="window_style"></property>
@@ -600,18 +600,18 @@
                                                     <property name="maximum_size"></property>
                                                     <property name="maxlength">0</property>
                                                     <property name="minimum_size">100,-1</property>
-                                                    <property name="name">txtTime</property>
+                                                    <property name="name">txtRes</property>
                                                     <property name="permission">protected</property>
                                                     <property name="pos"></property>
                                                     <property name="size">-1,-1</property>
                                                     <property name="style"></property>
                                                     <property name="subclass"></property>
                                                     <property name="tooltip"></property>
-                                                    <property name="validator_data_type"></property>
+                                                    <property name="validator_data_type">int</property>
                                                     <property name="validator_style">wxFILTER_NONE</property>
                                                     <property name="validator_type">wxDefaultValidator</property>
                                                     <property name="validator_variable"></property>
-                                                    <property name="value">100</property>
+                                                    <property name="value">500</property>
                                                     <property name="window_extra_style"></property>
                                                     <property name="window_name"></property>
                                                     <property name="window_style"></property>
@@ -714,7 +714,7 @@
                                                     <property name="maximum_size"></property>
                                                     <property name="maxlength">0</property>
                                                     <property name="minimum_size">100,-1</property>
-                                                    <property name="name">txtRes</property>
+                                                    <property name="name">txtTime</property>
                                                     <property name="permission">protected</property>
                                                     <property name="pos"></property>
                                                     <property name="size"></property>
@@ -722,7 +722,7 @@
                                                     <property name="subclass"></property>
                                                     <property name="tooltip"></property>
                                                     <property name="validator_data_type"></property>
-                                                    <property name="validator_style">wxFILTER_NONE</property>
+                                                    <property name="validator_style">wxFILTER_NUMERIC</property>
                                                     <property name="validator_type">wxDefaultValidator</property>
                                                     <property name="validator_variable"></property>
                                                     <property name="value">100</property>
@@ -836,7 +836,7 @@
                                                     <property name="subclass"></property>
                                                     <property name="tooltip"></property>
                                                     <property name="validator_data_type"></property>
-                                                    <property name="validator_style">wxFILTER_NONE</property>
+                                                    <property name="validator_style">wxFILTER_NUMERIC</property>
                                                     <property name="validator_type">wxDefaultValidator</property>
                                                     <property name="validator_variable"></property>
                                                     <property name="value">0.1</property>
@@ -950,7 +950,7 @@
                                                     <property name="subclass"></property>
                                                     <property name="tooltip"></property>
                                                     <property name="validator_data_type"></property>
-                                                    <property name="validator_style">wxFILTER_NONE</property>
+                                                    <property name="validator_style">wxFILTER_NUMERIC</property>
                                                     <property name="validator_type">wxDefaultValidator</property>
                                                     <property name="validator_variable"></property>
                                                     <property name="value">0.00001</property>
@@ -1064,7 +1064,7 @@
                                                     <property name="subclass"></property>
                                                     <property name="tooltip"></property>
                                                     <property name="validator_data_type"></property>
-                                                    <property name="validator_style">wxFILTER_NONE</property>
+                                                    <property name="validator_style">wxFILTER_NUMERIC</property>
                                                     <property name="validator_type">wxDefaultValidator</property>
                                                     <property name="validator_variable"></property>
                                                     <property name="value">0.0002</property>
@@ -2976,7 +2976,7 @@
                                                             <property name="label">Estimated remaining time:</property>
                                                             <property name="maximum_size"></property>
                                                             <property name="minimum_size"></property>
-                                                            <property name="name">lblEstRemTiime</property>
+                                                            <property name="name">lblEstRemTime</property>
                                                             <property name="permission">protected</property>
                                                             <property name="pos"></property>
                                                             <property name="size"></property>
@@ -3156,7 +3156,7 @@
                                     <event name="OnUpdateUI"></event>
                                     <object class="sizeritem" expanded="1">
                                         <property name="border">5</property>
-                                        <property name="flag">wxALIGN_LEFT|wxEXPAND</property>
+                                        <property name="flag">wxALIGN_LEFT|wxEXPAND|wxTOP|wxRIGHT</property>
                                         <property name="proportion">1</property>
                                         <object class="wxBoxSizer" expanded="1">
                                             <property name="minimum_size"></property>
@@ -3221,7 +3221,7 @@
                                             </object>
                                             <object class="sizeritem" expanded="1">
                                                 <property name="border">5</property>
-                                                <property name="flag">wxALIGN_CENTER|wxALL</property>
+                                                <property name="flag">wxALIGN_CENTER|wxALIGN_CENTER_VERTICAL|wxLEFT|wxRIGHT</property>
                                                 <property name="proportion">0</property>
                                                 <object class="wxStaticText" expanded="1">
                                                     <property name="bg"></property>
@@ -3238,7 +3238,7 @@
                                                     <property name="permission">protected</property>
                                                     <property name="pos"></property>
                                                     <property name="size">70,-1</property>
-                                                    <property name="style">wxALIGN_RIGHT</property>
+                                                    <property name="style"></property>
                                                     <property name="subclass"></property>
                                                     <property name="tooltip"></property>
                                                     <property name="validator_data_type"></property>
@@ -3280,7 +3280,7 @@
                                                 <property name="proportion">0</property>
                                                 <object class="wxComboBox" expanded="1">
                                                     <property name="bg"></property>
-                                                    <property name="choices"></property>
+                                                    <property name="choices">&quot;Cape Town&quot; &quot;Islande&quot; &quot;Mariane Trench&quot; &quot;Miami&quot; &quot;Sicily&quot; &quot;Tenerif&quot;</property>
                                                     <property name="context_help"></property>
                                                     <property name="enabled">1</property>
                                                     <property name="fg"></property>
@@ -3293,7 +3293,7 @@
                                                     <property name="permission">protected</property>
                                                     <property name="pos"></property>
                                                     <property name="size">200,-1</property>
-                                                    <property name="style"></property>
+                                                    <property name="style">wxCB_READONLY|wxCB_SORT</property>
                                                     <property name="subclass"></property>
                                                     <property name="tooltip"></property>
                                                     <property name="validator_data_type"></property>
@@ -3305,7 +3305,7 @@
                                                     <property name="window_name"></property>
                                                     <property name="window_style"></property>
                                                     <event name="OnChar"></event>
-                                                    <event name="OnCombobox"></event>
+                                                    <event name="OnCombobox">OnSelectComboBox</event>
                                                     <event name="OnEnterWindow"></event>
                                                     <event name="OnEraseBackground"></event>
                                                     <event name="OnKeyDown"></event>
@@ -3327,7 +3327,7 @@
                                                     <event name="OnRightUp"></event>
                                                     <event name="OnSetFocus"></event>
                                                     <event name="OnSize"></event>
-                                                    <event name="OnText"></event>
+                                                    <event name="OnText">OnWritingText</event>
                                                     <event name="OnTextEnter"></event>
                                                     <event name="OnUpdateUI"></event>
                                                 </object>

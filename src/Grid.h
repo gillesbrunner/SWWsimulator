@@ -36,7 +36,6 @@ private:
 
 	inline int lonlatToXY(double lon, double cLon) { return (int)tan((cLon - lon) * M_PI / 180.0) * _earth_ray; }
 
-	//void ComputeCellsVolumes(VectorGrid& grid);
 	void interpolateGrid(VectorGrid& grid);
 
 public:
@@ -55,6 +54,8 @@ public:
 		assert(i < _resolution && j < _resolution);
 		_topography[i * _resolution + j] = val;
 	}
+	void ComputeCellsVolumes();
+
 
 	// Colors
 	inline float GetR(uint i, uint j) { return (float)(TIFFGetR(_colorMapRGB[i *_resolution + j]) / 255.0);}

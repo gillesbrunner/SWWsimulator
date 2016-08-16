@@ -62,7 +62,7 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	lblDomain->Wrap( -1 );
 	sizerInitValues->Add( lblDomain, 0, wxALIGN_CENTER_VERTICAL|wxALL, 5 );
 	
-	txtDomain = new wxTextCtrl( pnlInit, wxID_ANY, wxT("100"), wxDefaultPosition, wxSize( -1,-1 ), 0 );
+	txtDomain = new wxTextCtrl( pnlInit, wxID_ANY, wxT("1500"), wxDefaultPosition, wxSize( -1,-1 ), 0 );
 	txtDomain->SetMinSize( wxSize( 100,-1 ) );
 	
 	sizerInitValues->Add( txtDomain, 0, wxALL, 5 );
@@ -71,19 +71,19 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	lblRes->Wrap( -1 );
 	sizerInitValues->Add( lblRes, 0, wxALIGN_CENTER_VERTICAL|wxALL, 5 );
 	
-	txtTime = new wxTextCtrl( pnlInit, wxID_ANY, wxT("100"), wxDefaultPosition, wxSize( -1,-1 ), 0 );
-	txtTime->SetMinSize( wxSize( 100,-1 ) );
+	txtRes = new wxTextCtrl( pnlInit, wxID_ANY, wxT("500"), wxDefaultPosition, wxSize( -1,-1 ), 0 );
+	txtRes->SetMinSize( wxSize( 100,-1 ) );
 	
-	sizerInitValues->Add( txtTime, 0, wxALL, 5 );
+	sizerInitValues->Add( txtRes, 0, wxALL, 5 );
 	
 	lblTime = new wxStaticText( pnlInit, wxID_ANY, wxT("Simulation Time [min]:"), wxDefaultPosition, wxDefaultSize, 0 );
 	lblTime->Wrap( -1 );
 	sizerInitValues->Add( lblTime, 0, wxALIGN_CENTER_VERTICAL|wxALL, 5 );
 	
-	txtRes = new wxTextCtrl( pnlInit, wxID_ANY, wxT("100"), wxDefaultPosition, wxDefaultSize, 0 );
-	txtRes->SetMinSize( wxSize( 100,-1 ) );
+	txtTime = new wxTextCtrl( pnlInit, wxID_ANY, wxT("100"), wxDefaultPosition, wxDefaultSize, 0 );
+	txtTime->SetMinSize( wxSize( 100,-1 ) );
 	
-	sizerInitValues->Add( txtRes, 0, wxALL, 5 );
+	sizerInitValues->Add( txtTime, 0, wxALL, 5 );
 	
 	lblMaxHeight = new wxStaticText( pnlInit, wxID_ANY, wxT("Max Wave Height [km]:"), wxDefaultPosition, wxDefaultSize, 0 );
 	lblMaxHeight->Wrap( -1 );
@@ -325,9 +325,9 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	wxBoxSizer* sizerEstRemTime;
 	sizerEstRemTime = new wxBoxSizer( wxHORIZONTAL );
 	
-	lblEstRemTiime = new wxStaticText( pnlSim, wxID_ANY, wxT("Estimated remaining time:"), wxDefaultPosition, wxDefaultSize, 0 );
-	lblEstRemTiime->Wrap( -1 );
-	sizerEstRemTime->Add( lblEstRemTiime, 0, wxALL, 5 );
+	lblEstRemTime = new wxStaticText( pnlSim, wxID_ANY, wxT("Estimated remaining time:"), wxDefaultPosition, wxDefaultSize, 0 );
+	lblEstRemTime->Wrap( -1 );
+	sizerEstRemTime->Add( lblEstRemTime, 0, wxALL, 5 );
 	
 	lblEstRemTime2 = new wxStaticText( pnlSim, wxID_ANY, wxT("inf"), wxDefaultPosition, wxDefaultSize, 0 );
 	lblEstRemTime2->Wrap( -1 );
@@ -358,11 +358,17 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	btnload = new wxButton( pnlVisu, wxID_ANY, wxT("Load Data"), wxDefaultPosition, wxSize( 150,-1 ), 0 );
 	toolsSizer->Add( btnload, 0, wxALIGN_CENTER|wxALL, 5 );
 	
-	lblCities = new wxStaticText( pnlVisu, wxID_ANY, wxT("City:"), wxDefaultPosition, wxSize( 70,-1 ), wxALIGN_RIGHT );
+	lblCities = new wxStaticText( pnlVisu, wxID_ANY, wxT("City:"), wxDefaultPosition, wxSize( 70,-1 ), 0 );
 	lblCities->Wrap( -1 );
-	toolsSizer->Add( lblCities, 0, wxALIGN_CENTER|wxALL, 5 );
+	toolsSizer->Add( lblCities, 0, wxALIGN_CENTER|wxALIGN_CENTER_VERTICAL|wxLEFT|wxRIGHT, 5 );
 	
-	cbTowns = new wxComboBox( pnlVisu, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( 200,-1 ), 0, NULL, 0 ); 
+	cbTowns = new wxComboBox( pnlVisu, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( 200,-1 ), 0, NULL, wxCB_READONLY|wxCB_SORT );
+	cbTowns->Append( wxT("Cape Town") );
+	cbTowns->Append( wxT("Islande") );
+	cbTowns->Append( wxT("Mariane Trench") );
+	cbTowns->Append( wxT("Miami") );
+	cbTowns->Append( wxT("Sicily") );
+	cbTowns->Append( wxT("Tenerif") );
 	toolsSizer->Add( cbTowns, 0, wxALIGN_CENTER|wxALL, 5 );
 	
 	lblLatitude = new wxStaticText( pnlVisu, wxID_ANY, wxT("Latitude:"), wxDefaultPosition, wxSize( 100,-1 ), wxALIGN_RIGHT );
@@ -379,7 +385,7 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	txtLongitude = new wxTextCtrl( pnlVisu, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( 200,-1 ), 0 );
 	toolsSizer->Add( txtLongitude, 0, wxALIGN_CENTER|wxALL, 5 );
 	
-	staticsizerManagment->Add( toolsSizer, 1, wxALIGN_LEFT|wxEXPAND, 5 );
+	staticsizerManagment->Add( toolsSizer, 1, wxALIGN_LEFT|wxEXPAND|wxTOP|wxRIGHT, 5 );
 	
 	mainSizerVisu->Add( staticsizerManagment, 1, wxALL|wxEXPAND, 5 );
 	
@@ -401,6 +407,8 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	btnInit1->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( MainWindow::OnGenerateInitialization ), NULL, this );
 	choiceMethod->Connect( wxEVT_COMMAND_CHOICE_SELECTED, wxCommandEventHandler( MainWindow::OnMethodSelect ), NULL, this );
 	btnload->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( MainWindow::OnLoadDataClick ), NULL, this );
+	cbTowns->Connect( wxEVT_COMMAND_COMBOBOX_SELECTED, wxCommandEventHandler( MainWindow::OnSelectComboBox ), NULL, this );
+	cbTowns->Connect( wxEVT_COMMAND_TEXT_UPDATED, wxCommandEventHandler( MainWindow::OnWritingText ), NULL, this );
 }
 
 MainWindow::~MainWindow()
@@ -415,4 +423,6 @@ MainWindow::~MainWindow()
 	btnInit1->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( MainWindow::OnGenerateInitialization ), NULL, this );
 	choiceMethod->Disconnect( wxEVT_COMMAND_CHOICE_SELECTED, wxCommandEventHandler( MainWindow::OnMethodSelect ), NULL, this );
 	btnload->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( MainWindow::OnLoadDataClick ), NULL, this );
+	cbTowns->Disconnect( wxEVT_COMMAND_COMBOBOX_SELECTED, wxCommandEventHandler( MainWindow::OnSelectComboBox ), NULL, this );
+	cbTowns->Disconnect( wxEVT_COMMAND_TEXT_UPDATED, wxCommandEventHandler( MainWindow::OnWritingText ), NULL, this );
 }

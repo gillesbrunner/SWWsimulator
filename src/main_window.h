@@ -50,9 +50,9 @@ class MainWindow : public wxFrame
 		wxStaticText* lblDomain;
 		wxTextCtrl* txtDomain;
 		wxStaticText* lblRes;
-		wxTextCtrl* txtTime;
-		wxStaticText* lblTime;
 		wxTextCtrl* txtRes;
+		wxStaticText* lblTime;
+		wxTextCtrl* txtTime;
 		wxStaticText* lblMaxHeight;
 		wxTextCtrl* txtMaxHeight;
 		wxStaticText* lblMinHeight;
@@ -89,7 +89,7 @@ class MainWindow : public wxFrame
 		wxTextCtrl* txtCyc;
 		wxGauge* barSim;
 		wxButton* btnStart;
-		wxStaticText* lblEstRemTiime;
+		wxStaticText* lblEstRemTime;
 		wxStaticText* lblEstRemTime2;
 		wxPanel* pnlVisu;
 		wxStaticBoxSizer* staticsizerManagment;
@@ -111,6 +111,8 @@ class MainWindow : public wxFrame
 		virtual void OnGenerateInitialization( wxCommandEvent& event ) { event.Skip(); }
 		virtual void OnMethodSelect( wxCommandEvent& event ) { event.Skip(); }
 		virtual void OnLoadDataClick( wxCommandEvent& event ) { event.Skip(); }
+		virtual void OnSelectComboBox( wxCommandEvent& event ) { event.Skip(); }
+		virtual void OnWritingText( wxCommandEvent& event ) { event.Skip(); }
 		
 	
 	public:

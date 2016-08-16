@@ -124,7 +124,7 @@ void OSGCanvas::OnSize(wxSizeEvent& event)
 {
     // this is also necessary to update the context on some platforms
     // method not available in wxWidgets 2.9.6
-//    wxGLCanvas::OnSize(event);
+	// wxGLCanvas::OnSize(event);
 
     // set GL viewport (not called by wxGLCanvas::OnSize on all platforms...)
     int width, height;

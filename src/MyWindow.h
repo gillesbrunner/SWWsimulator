@@ -40,6 +40,8 @@ public:
 	void OnMethodSelect( wxCommandEvent& event );
 	void OnGenerateInitialization( wxCommandEvent& event );
 	void OnLoadDataClick( wxCommandEvent& event );
+	void OnSelectComboBox( wxCommandEvent& event );
+	void OnWritingText( wxCommandEvent& event );
 
 	virtual ~MyWindow();
 

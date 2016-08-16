@@ -29,42 +29,42 @@ Grid::~Grid()
 	delete[] _colorMapRGB;
 }
 
-/*void Grid::ComputeCellsVolumes(VectorGrid& grid)
+void Grid::ComputeCellsVolumes()
 {
-	int GSize = grid.size()-1;
-	for (size_t i = 1; i < grid.size() - 1; i++)
+	uint GSize = _resolution-1;
+	for (size_t i = 1; i < GSize; i++)
 	{
-		grid[i].second[0].second = (1.0 / 9.0 * grid[i-1].second[0].second +  4.0 / 9.0 * grid[i-1].second[0].second + 1.0 / 9.0 * grid[i-1].second[1].second
-						   	      + 4.0 / 9.0 * grid[i  ].second[0].second + 16.0 / 9.0 * grid[i  ].second[0].second + 4.0 / 9.0 * grid[i  ].second[1].second
-								  + 1.0 / 9.0 * grid[i+1].second[0].second +  4.0 / 9.0 * grid[i+1].second[0].second + 1.0 / 9.0 * grid[i+1].second[1].second) / 4;
+		 Set(i, 0, (1.0 / 9.0 * Get(i-1,0) +  4.0 / 9.0 * Get(i-1,0) + 1.0 / 9.0 * Get(i-1,1)
+	    	      + 4.0 / 9.0 * Get(i  ,0) + 16.0 / 9.0 * Get(i  ,0) + 4.0 / 9.0 * Get(i  ,1)
+				  + 1.0 / 9.0 * Get(i+1,0) +  4.0 / 9.0 * Get(i+1,0) + 1.0 / 9.0 * Get(i+1,1)) / 4);
 
-		for (size_t j = 1; j < grid[i].second.size() - 1; j++)
+		for (size_t j = 1; j < GSize; j++)
 		{
-			grid[i].second[j].second = (1.0 / 9.0 * grid[i-1].second[j-1].second +  4.0 / 9.0 * grid[i-1].second[j].second + 1.0 / 9.0 * grid[i-1].second[j+1].second
-					           	   	  + 4.0 / 9.0 * grid[i  ].second[j-1].second + 16.0 / 9.0 * grid[i  ].second[j].second + 4.0 / 9.0 * grid[i  ].second[j+1].second
-									  + 1.0 / 9.0 * grid[i+1].second[j-1].second +  4.0 / 9.0 * grid[i+1].second[j].second + 1.0 / 9.0 * grid[i+1].second[j+1].second) / 4;
+			Set(i, j, (1.0 / 9.0 *Get(i-1,j-1) +  4.0 / 9.0 * Get(i-1,j) + 1.0 / 9.0 * Get(i-1,j+1)
+		   	   	     + 4.0 / 9.0 *Get(i  ,j-1) + 16.0 / 9.0 * Get(i  ,j) + 4.0 / 9.0 * Get(i  ,j+1)
+					 + 1.0 / 9.0 *Get(i+1,j-1) +  4.0 / 9.0 * Get(i+1,j) + 1.0 / 9.0 * Get(i+1,j+1)) / 4);
 		}
 
-		grid[i].second[GSize].second = (1.0 / 9.0 * grid[i-1].second[GSize-1].second +  4.0 / 9.0 * grid[i-1].second[GSize].second + 1.0 / 9.0 * grid[i-1].second[GSize].second
-							   	   	  + 4.0 / 9.0 * grid[i  ].second[GSize-1].second + 16.0 / 9.0 * grid[i  ].second[GSize].second + 4.0 / 9.0 * grid[i  ].second[GSize].second
-									  + 1.0 / 9.0 * grid[i+1].second[GSize-1].second +  4.0 / 9.0 * grid[i+1].second[GSize].second + 1.0 / 9.0 * grid[i+1].second[GSize].second) / 4;
+		Set(i, GSize, (1.0 / 9.0 * Get(i-1,GSize-1) +  4.0 / 9.0 * Get(i-1,GSize) + 1.0 / 9.0 * Get(i-1,GSize)
+			   	     + 4.0 / 9.0 * Get(i  ,GSize-1) + 16.0 / 9.0 * Get(i  ,GSize) + 4.0 / 9.0 * Get(i  ,GSize)
+				     + 1.0 / 9.0 * Get(i+1,GSize-1) +  4.0 / 9.0 * Get(i+1,GSize) + 1.0 / 9.0 * Get(i+1,GSize)) / 4);
 	}
 
-	for (size_t j = 1; j < grid[0].second.size() - 1; j++)
+	for (size_t j = 1; j < GSize; j++)
 	{
-		grid[0].second[j].second = (1.0 / 9.0 * grid[0].second[j-1].second +  4.0 / 9.0 * grid[0].second[j].second + 1.0 / 9.0 * grid[0].second[j+1].second
-						   	   	  + 4.0 / 9.0 * grid[0].second[j-1].second + 16.0 / 9.0 * grid[0].second[j].second + 4.0 / 9.0 * grid[0].second[j+1].second
-								  + 1.0 / 9.0 * grid[1].second[j-1].second +  4.0 / 9.0 * grid[1].second[j].second + 1.0 / 9.0 * grid[1].second[j+1].second) / 4;
+		Set(0, j, (1.0 / 9.0 * Get(0,j-1) +  4.0 / 9.0 * Get(0,j) + 1.0 / 9.0 * Get(0,j+1)
+				 + 4.0 / 9.0 * Get(0,j-1) + 16.0 / 9.0 * Get(0,j) + 4.0 / 9.0 * Get(0,j+1)
+				 + 1.0 / 9.0 * Get(1,j-1) +  4.0 / 9.0 * Get(1,j) + 1.0 / 9.0 * Get(1,j+1)) / 4);
 	}
 
 
-	for (size_t j = 1; j < grid[GSize].second.size() - 1; j++)
+	for (size_t j = 1; j < GSize; j++)
 	{
-		grid[GSize].second[j].second = (1.0 / 9.0 * grid[GSize-1].second[j-1].second +  4.0 / 9.0 * grid[GSize-1].second[j].second + 1.0 / 9.0 * grid[GSize].second[j+1].second
-						       	      + 4.0 / 9.0 * grid[GSize].second[j-1].second + 16.0 / 9.0 * grid[GSize].second[j].second + 4.0 / 9.0 * grid[GSize-1].second[j+1].second
-									  + 1.0 / 9.0 * grid[GSize].second[j-1].second +  4.0 / 9.0 * grid[GSize].second[j].second + 1.0 / 9.0 * grid[GSize].second[j+1].second) / 4;
+		Set(GSize, j, (1.0 / 9.0 * Get(GSize-1,j-1) +  4.0 / 9.0 * Get(GSize-1,j) + 1.0 / 9.0 * Get(GSize-1,j+1)
+	        	     + 4.0 / 9.0 * Get(GSize  ,j-1) + 16.0 / 9.0 * Get(GSize  ,j) + 4.0 / 9.0 * Get(GSize  ,j+1)
+ 				     + 1.0 / 9.0 * Get(GSize  ,j-1) +  4.0 / 9.0 * Get(GSize  ,j) + 1.0 / 9.0 * Get(GSize  ,j+1)) / 4);
 	}
-}*/
+}
 
 void Grid::interpolateGrid(VectorGrid& grid)
 {
@@ -93,8 +93,8 @@ void Grid::interpolateGrid(VectorGrid& grid)
 		}
 	}
 
-	Zfactor = 200 / (maxH-minH);
-	std::cout << "Zfactor " << Zfactor << std::endl;
+	Zfactor = 250 / (maxH-minH);
+	//std::cout << "Zfactor " << Zfactor << std::endl;
 }
 
 void Grid::loadTopography(double latitude, double longitude)
@@ -106,9 +106,9 @@ void Grid::loadTopography(double latitude, double longitude)
 	int minfileY = floor((-latitude + 90 - angle) / (180 / (double)(_num_files))) + 1;
 	int maxfileY = ceil((-latitude + 90 + angle) / (180 / (double)(_num_files))) + 1;
 
-	std::cout << "Angle: " << angle << std::endl;
+	/*std::cout << "Angle: " << angle << std::endl;
 	std::cout << "minX: " << minfileX << "  maxX: " << maxfileX << std::endl;
-	std::cout << "minY: " << minfileY << "  maxY: " << maxfileY << std::endl;
+	std::cout << "minY: " << minfileY << "  maxY: " << maxfileY << std::endl;*/
 
 	std::string line;
 	std::stringstream streamline("");
@@ -241,11 +241,11 @@ void Grid::loadColorMap(double latitude, double longitude)
 		    	colorGrid.H.setlength(3 * n * m);
 
 		    	int val = 0;
-		    	std::cout << "Npixels " << npixels << std::endl;
+		    	/*std::cout << "Npixels " << npixels << std::endl;
 		    	std::cout << "w " << w << " h " << h << std::endl;
 		    	std::cout << "minX " << minX << " maxX " << maxX << std::endl;
 		    	std::cout << "minY " << minY << " maxY " << maxY << std::endl;
-		    	std::cout << "n " << n << " m " << m << std::endl;
+		    	std::cout << "n " << n << " m " << m << std::endl;*/
 
 		    	// Create the RGB grid to interpolate the colors
 		    	for (uint i = 0; i < n; i++)
@@ -294,13 +294,8 @@ void Grid::loadColorMap(double latitude, double longitude)
 // 100km = 1 on (x,y)
 void Grid::render(osg::Group* root)
 {
-	//loadTopography(17.827623, 145.132992);	// Mariane Trench
-	//loadTopography(28.861680, -15.286634);	// Tenerif
-	loadTopography(25.881838, -80.805156);	// Miami
-	//loadTopography(46.47246, 6.580616);		// Lausanne 150kms
-	//loadTopography(-33.959678, 18.670304); 	// Cape Town
-	//loadTopography(64.887146, -18.430727);	// Islande
-	//loadTopography(39.356189, 14.083115);		// Sicile
+	// Delete the previous child if it exist
+	root->removeChild(0, 1);
 
 	osg::Geode* geode = new osg::Geode();
 	osg::Geometry* 	geo = new osg::Geometry();
@@ -315,7 +310,6 @@ void Grid::render(osg::Group* root)
 		for (size_t j = 0; j < _resolution; j++)
 		{
 			GridVertices->push_back( osg::Vec3( (i + 0.5) * _dx, (j + 0.5) * _dx, Zfactor * Get(i,j) ) );
-			//colors->push_back(osg::Vec4(1.0f, 0.89f, 0.77f, 1.0f) );
 		}
 	}
 	geo->setVertexArray( GridVertices );
