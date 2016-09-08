@@ -102,6 +102,7 @@ class MainWindow : public wxFrame
 		wxTextCtrl* txtLongitude;
 		
 		// Virtual event handlers, overide them in your derived class
+		virtual void OnSize( wxSizeEvent& event ) { event.Skip(); }
 		virtual void OnExit( wxCommandEvent& event ) { event.Skip(); }
 		virtual void OnInitMotion( wxMouseEvent& event ) { event.Skip(); }
 		virtual void OnSimMotion( wxMouseEvent& event ) { event.Skip(); }

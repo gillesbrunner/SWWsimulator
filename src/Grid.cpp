@@ -7,8 +7,8 @@
 
 #include "Grid.h"
 
-Grid::Grid(uint SIZE, uint RESOLUTION)
-: _size(SIZE), _resolution(RESOLUTION), Zfactor(0.05)
+Grid::Grid(MyWindow* parent, uint SIZE, uint RESOLUTION)
+: _parent(parent), _size(SIZE), _resolution(RESOLUTION), Zfactor(0.05)
 {
 	_resolution = std::max(2, (int)_resolution);
 
@@ -78,8 +78,13 @@ void Grid::interpolateGrid(VectorGrid& grid)
 
 	double minH = DBL_MAX;
 	double maxH = DBL_MIN;
+
+	_parent->SetProgressBarValue(0);
+
 	for (size_t i = 0; i < _resolution; i++)
 	{
+		_parent->SetProgressBarValue(i / (double)(_resolution-1) * 100);
+
 		for (size_t j = 0; j < _resolution; j++)
 		{
 		    // Interpolate the height
@@ -160,7 +165,7 @@ void Grid::loadTopography(double latitude, double longitude)
 		}
 	}
 
-	//sort the new grid
+	//sort the new gridb
 	for (size_t i = 0; i < grid.size(); i++)
 	{
 		std::sort(grid[i].second.begin(), grid[i].second.end());

@@ -11,6 +11,13 @@ MyWindow::MyWindow()
 : MainWindow((wxFrame *)NULL)
 {
 	_selectedPanel = INITIALISATION;
+
+	_statusBar = CreateStatusBar(1, wxST_SIZEGRIP);
+
+	int barHeight = _statusBar->GetSize().GetHeight();
+	int barWidth = _statusBar->GetSize().GetWidth();
+    _progressGauge = new wxGauge(_statusBar, wxID_ANY, 100, wxPoint(barWidth/2, 0), wxSize(barWidth, barHeight * 0.9), wxGA_SMOOTH, wxDefaultValidator);
+
 	pnlInit->Show();
 	pnlSim->Hide();
 	pnlVisu->Hide();
@@ -18,7 +25,23 @@ MyWindow::MyWindow()
 
 MyWindow::~MyWindow()
 {
-	delete _OSGview;
+	if (_OSGview) delete _OSGview;
+}
+
+void MyWindow::SetProgressBarValue(int v)
+{
+	assert(v >= 0 && v <= 100);
+	_progressGauge->SetValue(v);
+
+}
+
+void MyWindow::OnSize( wxSizeEvent& event )
+{
+	int barHeight = _statusBar->GetSize().GetHeight();
+	int barWidth = _statusBar->GetSize().GetWidth();
+
+	_progressGauge->SetPosition(wxPoint(barWidth/2, 0));
+	_progressGauge->SetSize(wxSize(barWidth, barHeight * 0.9));
 }
 
 void MyWindow::OnExit(wxCommandEvent& event) { ::wxExit(); }
@@ -171,7 +194,7 @@ void MyWindow::OnLoadDataClick( wxCommandEvent& event )
 		// Create the Grid
 		if (simGrid) delete simGrid;
 
-		simGrid = new Grid(size, res);
+		simGrid = new Grid(this, size, res);
 		simGrid->loadTopography(lat, lon);
 		simGrid->ComputeCellsVolumes();
 

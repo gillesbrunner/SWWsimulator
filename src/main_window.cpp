@@ -35,16 +35,14 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	sizerButtons->Add( btnInit, 0, wxALL, 5 );
 	
 	btnSim = new wxStaticBitmap( this, wxID_ANY, wxBitmap( wxT("../icons/simulation.png"), wxBITMAP_TYPE_ANY ), wxDefaultPosition, wxDefaultSize, 0 );
-	sizerButtons->Add( btnSim, 0, wxALL|wxALIGN_RIGHT, 5 );
+	sizerButtons->Add( btnSim, 0, wxALL, 5 );
 	
 	btnView = new wxStaticBitmap( this, wxID_ANY, wxBitmap( wxT("../icons/vizualisation.png"), wxBITMAP_TYPE_ANY ), wxDefaultPosition, wxDefaultSize, 0 );
-	sizerButtons->Add( btnView, 0, wxALL|wxALIGN_CENTER_HORIZONTAL, 5 );
+	sizerButtons->Add( btnView, 0, wxALL, 5 );
 	
-	mainSizer->Add( sizerButtons, 1, wxEXPAND, 5 );
+	mainSizer->Add( sizerButtons, 1, wxALL|wxEXPAND, 5 );
 	
 	pnlInit = new wxPanel( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
-	pnlInit->Hide();
-	
 	wxFlexGridSizer* mainSizerInit;
 	mainSizerInit = new wxFlexGridSizer( 4, 1, 10, 0 );
 	mainSizerInit->SetFlexibleDirection( wxBOTH );
@@ -123,7 +121,7 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	
 	sizerProbInput->Add( sizerInitValues, 1, wxEXPAND, 5 );
 	
-	mainSizerInit->Add( sizerProbInput, 1, wxEXPAND, 5 );
+	mainSizerInit->Add( sizerProbInput, 1, wxEXPAND|wxALL|wxALIGN_CENTER_HORIZONTAL, 5 );
 	
 	wxStaticBoxSizer* sizerInitSol;
 	sizerInitSol = new wxStaticBoxSizer( new wxStaticBox( pnlInit, wxID_ANY, wxT("Initial Solution") ), wxVERTICAL );
@@ -345,6 +343,8 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	mainSizer->Add( pnlSim, 1, wxALIGN_TOP|wxALL|wxEXPAND, 5 );
 	
 	pnlVisu = new wxPanel( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
+	pnlVisu->Hide();
+	
 	wxFlexGridSizer* mainSizerVisu;
 	mainSizerVisu = new wxFlexGridSizer( 1, 2, 0, 0 );
 	mainSizerVisu->SetFlexibleDirection( wxBOTH );
@@ -398,6 +398,7 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 	this->Layout();
 	
 	// Connect Events
+	this->Connect( wxEVT_SIZE, wxSizeEventHandler( MainWindow::OnSize ) );
 	this->Connect( item_exit->GetId(), wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( MainWindow::OnExit ) );
 	btnInit->Connect( wxEVT_MOTION, wxMouseEventHandler( MainWindow::OnInitMotion ), NULL, this );
 	btnSim->Connect( wxEVT_MOTION, wxMouseEventHandler( MainWindow::OnSimMotion ), NULL, this );
@@ -414,6 +415,7 @@ MainWindow::MainWindow( wxWindow* parent, wxWindowID id, const wxString& title, 
 MainWindow::~MainWindow()
 {
 	// Disconnect Events
+	this->Disconnect( wxEVT_SIZE, wxSizeEventHandler( MainWindow::OnSize ) );
 	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( MainWindow::OnExit ) );
 	btnInit->Disconnect( wxEVT_MOTION, wxMouseEventHandler( MainWindow::OnInitMotion ), NULL, this );
 	btnSim->Disconnect( wxEVT_MOTION, wxMouseEventHandler( MainWindow::OnSimMotion ), NULL, this );

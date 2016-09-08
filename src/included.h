@@ -51,6 +51,7 @@
 #include <osg/PositionAttitudeTransform>
 #include <wx/image.h>
 #include <wx/menu.h>
+#include <wx/statusbr.h>
 
 // Standards includes
 #include <unordered_map>

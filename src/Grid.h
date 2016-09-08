@@ -11,6 +11,8 @@
 #include "included.h"
 #include <tiffio.h>
 
+class MyWindow;
+
 struct VectorGrid
 {
 	alglib::real_1d_array X;
@@ -21,6 +23,9 @@ struct VectorGrid
 class Grid
 {
 private:
+
+	MyWindow* _parent;
+
 	const double _num_files = 50;
 	const double _earth_ray = 6371;
 
@@ -39,8 +44,8 @@ private:
 	void interpolateGrid(VectorGrid& grid);
 
 public:
-	Grid(uint size, uint resolution);
-	Grid(std::string filename);
+	Grid(MyWindow* parent, uint size, uint resolution);
+	Grid(MyWindow* parent, std::string filename);
 	virtual ~Grid();
 
 	inline double Get(uint i, uint j)

@@ -16,11 +16,14 @@ typedef exprtk::expression<double>   expression_t;
 typedef exprtk::parser<double>     	 parser_t;
 
 
-class MyWindow: public MainWindow {
+class MyWindow: public MainWindow
+{
 private :
 	Panel _selectedPanel;
 
 	VisuPanel* 	_OSGview;
+	wxStatusBar* _statusBar;
+	wxGauge* _progressGauge;
 
 	expression_t _expression;
 	double _exprX;
@@ -31,6 +34,7 @@ public:
 
 	MyWindow();
 
+	void OnSize( wxSizeEvent& event );
 	void OnExit(wxCommandEvent& event);
 
 	void OnInitMotion( wxMouseEvent& event );
@@ -47,6 +51,8 @@ public:
 
 	inline double EvaluateExpression(double const& x, double const& y)
 	{ _exprX = x; _exprY = y; return _expression.value(); }
+
+	void SetProgressBarValue(int v);
 
 private:
 	void InitExpression(std::string expression_string);
